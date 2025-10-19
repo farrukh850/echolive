@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/authentication/step-1", "destination": "/step-1.html" },
+    { "source": "/authentication/step-2", "destination": "/step-2.html" },
+    { "source": "/authentication/step-3", "destination": "/step-3.html" },
+    { "source": "/collections/collection-posts", "destination": "/collection-posts.html" },
+    { "source": "/collections/collection-posts-empty", "destination": "/collection-posts-empty.html" },
+    { "source": "/create-new-post", "destination": "/create-new-post.html" },
+    { "source": "/messages", "destination": "/messages.html" },
+    { "source": "/notifications", "destination": "/notifications.html" }
+  ]
+}
+
