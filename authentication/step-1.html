@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Echolive</title>
+</head>
+<body>
+    <div class="grid grid-cols-12 gap-5 bg-grey-bg lg:px-8 px-4">
+        <div class="col-span-12 lg:col-span-5 lg:py-6 flex flex-col items-center">
+            <div class="max-w-login w-full">
+                <a href="step-1.html"><img src="/images/logo.svg" alt="Echolive" class="mt-6 mb-8 lg:mt-12 lg:mb-32 mx-auto"></a>
+                <div class="relative pb-4 lg:mb-8 mb-6">
+                    <h1 class="text-3xl lg:text-5xl font-bold font-montserrat leading-14 lg:text-center">Sign up for ECHOLIVE</h1>
+                    <span class="h-0.5 bg-border-grey absolute bottom-0 right-0 left-0 w-full lg:w-7/12 mx-auto"><em class="h-0.5 absolute bottom-0 left-0 w-28 bg-yellow-main"></em></span>
+                </div>
+                <form action="#">
+                    <div class="relative mb-2">
+                        <input type="text" placeholder=" " class="w-full h-15 lg:h-18 bg-white/70 rounded-2xl text-base font-dm-sans font-medium pl-16 pt-6 pb-2 focus:outline-0 focus:border-yellow-main border border-white peer">
+                        <label class="absolute left-16 top-1/2 -translate-y-1/2 text-black/50 text-base font-medium font-dm-sans transition-all duration-300 pointer-events-none peer-focus:top-6 peer-focus:text-sm peer-focus:text-yellow-main peer-[:not(:placeholder-shown)]:top-6 peer-[:not(:placeholder-shown)]:text-sm peer-[:not(:placeholder-shown)]:text-black/70">Email</label>
+                        <img src="/images/envelope-colored.svg" alt="Envelope" class="absolute left-4.5 top-1/2 -translate-y-1/2">
+                        <img src="/images/envelope.svg" alt="Envelope" class="absolute left-4.5 top-1/2 -translate-y-1/2">
+                    </div>
+                    <div class="relative mb-2">
+                        <input type="password" placeholder=" " class="w-full h-15 lg:h-18 bg-white/70 rounded-2xl text-base font-dm-sans font-medium pl-16 pt-6 pb-2 focus:outline-0 focus:border-yellow-main border border-white peer">
+                        <label class="absolute left-16 top-1/2 -translate-y-1/2 text-black/50 text-base font-medium font-dm-sans transition-all duration-300 pointer-events-none peer-focus:top-6 peer-focus:text-sm peer-focus:text-yellow-main peer-[:not(:placeholder-shown)]:top-6 peer-[:not(:placeholder-shown)]:text-sm peer-[:not(:placeholder-shown)]:text-black/70">Password</label>
+                        <img src="/images/lock.svg" alt="Lock" class="absolute left-4.5 top-1/2 -translate-y-1/2">
+                        <img src="/images/lock-colored.svg" alt="Lock" class="absolute left-4.5 top-1/2 -translate-y-1/2">
+                        <img src="/images/eye-open.svg" alt="Eye Open" class="absolute right-4.5 top-1/2 -translate-y-1/2 cursor-pointer">
+                    </div>
+                    <div class="relative">
+                        <input type="password" placeholder=" " class="w-full h-15 lg:h-18 bg-white/70 rounded-2xl text-base font-dm-sans font-medium pl-16 pt-6 pb-2 focus:outline-0 focus:border-yellow-main border border-white peer">
+                        <label class="absolute left-16 top-1/2 -translate-y-1/2 text-black/50 text-base font-medium font-dm-sans transition-all duration-300 pointer-events-none peer-focus:top-6 peer-focus:text-sm peer-focus:text-yellow-main peer-[:not(:placeholder-shown)]:top-6 peer-[:not(:placeholder-shown)]:text-sm peer-[:not(:placeholder-shown)]:text-black/70">Confirm Password</label>
+                        <img src="/images/lock.svg" alt="Lock" class="absolute left-4.5 top-1/2 -translate-y-1/2">
+                        <img src="/images/lock-colored.svg" alt="Lock" class="absolute left-4.5 top-1/2 -translate-y-1/2">
+                        <img src="/images/eye-open.svg" alt="Eye Open" class="absolute right-4.5 top-1/2 -translate-y-1/2 cursor-pointer">
+                    </div>
+                    <a href="step-2.html" class="w-full rounded-xl h-15 lg:h-18 flex items-center justify-center text-lg font-rubik font-medium mt-6 cursor-pointer bg-yellow-main">Next</a>
+                </form>
+                <p class="font-montserrat text-base mt-4 text-center text-black/50 font-medium">Already have an account? <a href="#" class="text-black underline">Login</a></p>
+            </div>
+        </div>
+        <div class="col-span-12 lg:col-span-7 relative">
+            <div class="bg-gradient-to-b block lg:hidden absolute top-0 bottom-0 w-full h-full z-10 from-[#F7F4E7] to-[#F7F4E7]/0"></div>
+            <img src="/images/auth-images.png" class="w-full h-full object-cover" alt="Auth Images">
+        </div>
+    </div>
+    <script type="module" src="/src/js/authentication.js"></script>
+</body>
+</html>
