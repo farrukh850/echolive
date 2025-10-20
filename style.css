@@ -52,7 +52,9 @@
   max-width: 1544px;
   margin: 0 auto;
 }
-
+.menu-dropdown{
+  top: 120% !important;
+}
 /* Custom dashed border with more spacing between dashes */
 .border-dashed-spaced {
   border: 1px solid transparent;
