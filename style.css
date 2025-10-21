@@ -27,7 +27,14 @@
 .font-dm-sans {
   font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
 }
-
+@media (max-width: 640px) {
+  .menu-dropdown {
+    top: auto !important;
+  }
+  header .menu-dropdown {
+    top: 80px !important;
+  }
+}
 .font-montserrat {
   font-family: "Montserrat", ui-sans-serif, system-ui, sans-serif;
 }
@@ -49,11 +56,15 @@
 }
 
 .container{
-  max-width: 1544px;
+  max-width: 1400px;
   margin: 0 auto;
 }
-.menu-dropdown{
-  top: 120% !important;
+
+header .menu-dropdown {
+  top: 80px !important;
+}
+.menu-dropdown {
+  top: 120%;
 }
 /* Custom dashed border with more spacing between dashes */
 .border-dashed-spaced {
