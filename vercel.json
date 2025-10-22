@@ -8,6 +8,7 @@
     { "source": "/create-new-post", "destination": "/create-new-post.html" },
     { "source": "/messages", "destination": "/messages.html" },
     { "source": "/notifications", "destination": "/notifications.html" },
+    { "source": "/notification-empty", "destination": "/notification-empty.html" },
     { "source": "/settings", "destination": "/my-profile-settings.html" },
     { "source": "/subscription-settings", "destination": "/subscription-settings.html" },
     { "source": "/packages-empty", "destination": "/packages-empty.html" },

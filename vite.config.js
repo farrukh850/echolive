@@ -16,7 +16,7 @@ export default defineConfig({
         'create-new-post': resolve(__dirname, 'create-new-post/create-new-post.html'),
         'messages': resolve(__dirname, 'messages/messages.html'),
         'notifications': resolve(__dirname, 'notifications/notifications.html'),
-        'notifications-empty': resolve(__dirname, 'notifications/notifications-empty.html'),
+        'notification-empty': resolve(__dirname, 'notifications/notification-empty.html'),
         'my-profile-setting': resolve(__dirname, 'settings/my-profile-setting.html'),
         'subscription-setting': resolve(__dirname, 'settings/subscription-setting.html'),
         'packages-empty': resolve(__dirname, 'settings/packages-empty.html'),
