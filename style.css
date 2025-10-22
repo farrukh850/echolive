@@ -45,6 +45,9 @@ main{
   header .menu-dropdown {
     top: 80px !important;
   }
+  .container{
+      padding: 0 !important;
+  }
 }
 .font-montserrat {
   font-family: "Montserrat", ui-sans-serif, system-ui, sans-serif;
@@ -68,7 +71,9 @@ main{
 
 .container{
   margin: 0 auto;
-    padding: 0 30px;
+  padding: 0 30px;
+  max-width: 1536px;
+  width: 100%;
 }
 
 header .menu-dropdown {

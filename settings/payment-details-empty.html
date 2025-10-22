@@ -55,7 +55,7 @@
     <section class="pb-20">
         <div class="container">
             <div class="grid grid-cols-12 gap-5 items-start">
-                <div class="col-span-12 lg:col-span-8 px-4 lg:px-6 py-6 rounded-3xl bg-white h-full">
+                <div class="col-span-12 lg:col-span-9 px-4 lg:px-6 py-6 rounded-3xl bg-white h-full">
                     <div class="flex items-center justify-between">
                         <h2 class="font-montserrat font-semibold text-3xl">Setting</h2>
                         <button class="px-4 py-5 h-12 flex items-center justify-center bg-yellow-main border border-yellow-main font-rubik font-medium text-base lg:text-lg rounded-xl cursor-pointer">Save Changes</button>
@@ -88,13 +88,13 @@
                         <img src="/images/no-payment-method.svg" class="w-36 lg:w-44" alt="Collections Icon">
                         <h5 class="text-lg font-montserrat font-semibold">No payment methods added.</h5>
                         <h6 class="text-base text-black/60 font-montserrat">You haven’t added any payment methods yet.</h6>
-                        <button class="flex items-center gap-3 px-4 py-3 bg-yellow-main rounded-xl font-lg font-medium font-rubik w-full lg:w-auto justify-center cursor-pointer"><img src="/images/plus.svg" alt="Plus">Add Card</button>
+                        <button class="flex add-card-button items-center gap-3 px-4 py-3 bg-yellow-main rounded-xl font-lg font-medium font-rubik w-full lg:w-auto justify-center cursor-pointer"><img src="/images/plus.svg" alt="Plus">Add Card</button>
                     </div>
                 </div>
-                <div class="col-span-12 lg:col-span-4 flex flex-col gap-2 px-4 lg:px-0">
-                    <div class="w-full h-68 rounded-xl relative">
-                        <img src="/images/side-post1.png" alt="Post Image" class="h-full w-full&gt; object-cover rounded-xl relative">
-                        <div class="absolute bottom-0 flex items-center justify-between py-2 px-5 left-0 right-0  w-full bg-white">
+                <div class="col-span-12 lg:col-span-3 flex flex-col gap-2 px-4 lg:px-0">
+                    <div class="w-full h-50 rounded-xl relative">
+                        <img src="/images/side-post1.png" alt="Post Image" class="h-full w-full object-cover rounded-xl relative">
+                        <div class="absolute bottom-0 flex items-center justify-between py-2 px-5 left-0 right-0  w-full bg-white rounded-bl-xl rounded-br-xl">
                             <div class="flex gap-4 items-center">
                                 <div class="w-10 h-10 rounded-full relative">
                                     <img src="/images/side-avatar1.png" alt="Avatar" class="w-full h-full object-cover">
@@ -118,9 +118,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full h-68 rounded-xl relative">
-                        <img src="/images/side-post2.png" alt="Post Image" class="h-full w-full&gt; object-cover rounded-xl relative">
-                        <div class="absolute bottom-0 flex items-center justify-between py-2 px-5 left-0 right-0  w-full bg-white">
+                    <div class="w-full h-50 rounded-xl relative">
+                        <img src="/images/side-post2.png" alt="Post Image" class="h-full w-full object-cover rounded-xl relative">
+                        <div class="absolute bottom-0 flex items-center justify-between py-2 px-5 left-0 right-0  w-full bg-white rounded-bl-xl rounded-br-xl">
                             <div class="flex gap-4 items-center">
                                 <div class="w-10 h-10 rounded-full relative">
                                     <img src="/images/side-avatar1.png" alt="Avatar" class="w-full h-full object-cover">
@@ -144,9 +144,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full h-68 rounded-xl relative">
-                        <img src="/images/side-post3.png" alt="Post Image" class="h-full w-full&gt; object-cover rounded-xl relative">
-                        <div class="absolute bottom-0 flex items-center justify-between py-2 px-5 left-0 right-0  w-full bg-white">
+                    <div class="w-full h-50 rounded-xl relative">
+                        <img src="/images/side-post3.png" alt="Post Image" class="h-full w-full object-cover rounded-xl relative">
+                        <div class="absolute bottom-0 flex items-center justify-between py-2 px-5 left-0 right-0  w-full bg-white rounded-bl-xl rounded-br-xl">
                             <div class="flex gap-4 items-center">
                                 <div class="w-10 h-10 rounded-full relative">
                                     <img src="/images/side-avatar1.png" alt="Avatar" class="w-full h-full object-cover">
@@ -178,20 +178,36 @@
 
 
 <!-- Unsubscribe -->
-<div id="delete-card" class="bg-black/50 fixed top-0 left-0 right-0 bottom-0 z-1000 hidden">
+<div id="add-card" class="bg-black/50 fixed top-0 left-0 right-0 bottom-0 z-1000 hidden">
     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-3xl w-full max-w-170 p-8">
         <div class="flex items-center justify-between pb-6 border-b border-black/10">
-            <h2 class="font-montserrat font-semibold text-2xl">Delete Card?</h2>
+            <h2 class="font-montserrat font-semibold text-2xl">Add New Card</h2>
             <div class="close-icon cursor-pointer"><img src="/images/close-icon.svg" alt="Close Icon"></div>
         </div>
-        <div class="flex flex-col gap-5 text-center my-8">
-            <h5 class="text-xl font-semibold font-montserrat">Are you sure you want to remove this payment card?</h5>
-            <p class="text-base font-montserrat">You won’t be able to use it for future payments, but you can add a new one anytime.</p>
-        </div>
-        <div class="flex items-center gap-5">
-            <button class="flex-1 h-16 flex items-center justify-center py-6 px-10 rounded-xl text-lg font-medium font-rubik border border-black/10 cursor-pointer">Cancel</button>
-            <button class="flex-1 h-16 flex items-center justify-center py-6 px-10 rounded-xl text-lg bg-red-main font-medium font-rubik text-white border border-light-gray cursor-pointer">Delete Card</button>
-        </div>
+        <form action="#" class="w-full flex flex-col gap-6 mt-6">
+            <div class="flex flex-col w-full gap-3">
+                <label for="card-no" class="text-lg font-montserrat font-semibold">Card Number</label>
+                <input type="text" placeholder="1234 5678 9012 3483" id="card-no" name="username" class="h-18 rounded-2xl border hover:bg-light-gray border-black/10 text-base font-dm-sans font-medium p-6 w-full focus:outline-none focus:border-yellow-main transition-all duration-300">
+            </div>
+            <div class="flex justify-between gap-5">
+                <div class="flex flex-col w-full gap-3">
+                    <label for="period" class="text-lg font-montserrat font-semibold">Expiry Date</label>
+                    <input type="text" placeholder="MM/YY" id="period" name="username" class="h-18 rounded-2xl border hover:bg-light-gray border-black/10 text-base font-dm-sans font-medium p-6 w-full focus:outline-none focus:border-yellow-main transition-all duration-300">
+                </div>
+                <div class="flex flex-col w-full gap-3">
+                    <label for="cvc" class="text-lg font-montserrat font-semibold ">CVC</label>
+                    <input type="text" placeholder="123" id="cvc" name="username" class="h-18 rounded-2xl border hover:bg-light-gray border-black/10 text-base font-dm-sans font-medium p-6 w-full focus:outline-none focus:border-yellow-main transition-all duration-300">
+                </div>
+            </div>
+            <div class="flex flex-col gap-3">
+                <label for="cardholder-name" class="font-montserrat text-lg font-semibold">Cardholder Name</label>
+                <input type="text" placeholder="John Doe" id="cardholder-name" name="cardholder-name" class="h-18 rounded-2xl border hover:bg-light-gray border-black/10 text-base font-dm-sans font-medium p-6 w-full focus:outline-none focus:border-yellow-main transition-all duration-300">
+            </div>
+            <div class="flex items-center gap-5">
+                <button class="flex-1 h-16 flex items-center justify-center py-6 px-10 rounded-xl text-lg font-medium font-rubik border border-black/10 cursor-pointer">Cancel</button>
+                <button class="flex-1 h-16 flex items-center justify-center py-6 px-10 rounded-xl text-lg bg-yellow-main font-medium font-rubik border border-light-gray cursor-pointer">Add Card</button>
+            </div>
+        </form>
     </div>
 </div>
 <script type="module" src="/src/js/slider.js"></script>

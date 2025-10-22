@@ -1,5 +1,47 @@
 // Popup functionality for multiple popups
 document.addEventListener('DOMContentLoaded', () => {
+    // ===== Add Card Popup =====
+    const addCardPopup = document.getElementById('add-card');
+
+    if (addCardPopup) {
+        const addCardButtons = document.querySelectorAll('.add-card-button');
+        const addCardCloseIcon = addCardPopup.querySelector('.close-icon');
+        const addCardCancelButton = addCardPopup.querySelector('button:first-of-type');
+
+        // Toggle popup visibility when add card buttons are clicked
+        addCardButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                openPopup(addCardPopup);
+            });
+        });
+
+        // Close popup when clicking the close icon
+        if (addCardCloseIcon) {
+            addCardCloseIcon.addEventListener('click', () => {
+                closePopup(addCardPopup);
+            });
+        }
+
+        // Close popup when clicking the cancel button
+        if (addCardCancelButton) {
+            addCardCancelButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                closePopup(addCardPopup);
+            });
+        }
+
+        // Close popup when clicking outside the popup content
+        addCardPopup.addEventListener('click', (e) => {
+            if (e.target === addCardPopup) {
+                closePopup(addCardPopup);
+            }
+        });
+
+        // Initialize popup to be hidden by default
+        closePopup(addCardPopup);
+    }
+
     // ===== Edit Package Popup =====
     const editPackagePopup = document.getElementById('edit-package-popup');
 
@@ -130,6 +172,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Close all popups with Escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
+            if (addCardPopup && isPopupOpen(addCardPopup)) {
+                closePopup(addCardPopup);
+            }
             if (editPackagePopup && isPopupOpen(editPackagePopup)) {
                 closePopup(editPackagePopup);
             }
