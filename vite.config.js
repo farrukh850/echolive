@@ -18,11 +18,11 @@ export default defineConfig({
         'notifications': resolve(__dirname, 'notifications/notifications.html'),
         'notification-empty': resolve(__dirname, 'notifications/notification-empty.html'),
         'my-profile-setting': resolve(__dirname, 'settings/my-profile-setting.html'),
-        'subscription-setting': resolve(__dirname, 'settings/subscription-setting.html'),
+        'subscription-settings': resolve(__dirname, 'settings/subscription-settings.html'),
         'packages-empty': resolve(__dirname, 'settings/packages-empty.html'),
         'my-subscriptions': resolve(__dirname, 'settings/my-subscriptions.html'),
         'my-subscriptions-empty': resolve(__dirname, 'settings/my-subscriptions-empty.html'),
-          'my-interests': resolve(__dirname, 'settings/my-interests.html')
+        'my-interests': resolve(__dirname, 'settings/my-interests.html')
       }
     }
   }
