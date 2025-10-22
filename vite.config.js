@@ -15,7 +15,14 @@ export default defineConfig({
         'collection-posts-empty': resolve(__dirname, 'collections/collection-posts-empty.html'),
         'create-new-post': resolve(__dirname, 'create-new-post/create-new-post.html'),
         'messages': resolve(__dirname, 'messages/messages.html'),
-        'notifications': resolve(__dirname, 'notifications/notifications.html')
+        'notifications': resolve(__dirname, 'notifications/notifications.html'),
+        'notifications-empty': resolve(__dirname, 'notifications/notifications-empty.html'),
+        'my-profile-setting': resolve(__dirname, 'settings/my-profile-setting.html'),
+        'subscription-setting': resolve(__dirname, 'settings/subscription-setting.html'),
+        'packages-empty': resolve(__dirname, 'settings/packages-empty.html'),
+        'my-subscriptions': resolve(__dirname, 'settings/my-subscriptions.html'),
+        'my-subscriptions-empty': resolve(__dirname, 'settings/my-subscriptions-empty.html'),
+          'my-interests': resolve(__dirname, 'settings/my-interests.html')
       }
     }
   }

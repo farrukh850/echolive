@@ -7,7 +7,13 @@
     { "source": "/collections/collection-posts-empty", "destination": "/collection-posts-empty.html" },
     { "source": "/create-new-post", "destination": "/create-new-post.html" },
     { "source": "/messages", "destination": "/messages.html" },
-    { "source": "/notifications", "destination": "/notifications.html" }
+    { "source": "/notifications", "destination": "/notifications.html" },
+    { "source": "/settings", "destination": "/my-profile-settings.html" },
+    { "source": "/subscription-settings", "destination": "/subscription-settings.html" },
+    { "source": "/packages-empty", "destination": "/packages-empty.html" },
+    { "source": "/my-subscriptions", "destination": "/my-subscriptions.html" },
+    { "source": "/my-subscriptions-empty", "destination": "/my-subscriptions-empty.html" },
+    { "source": "/my-interests", "destination": "/my-interests.html" }
   ]
 }
 

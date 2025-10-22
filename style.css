@@ -14,6 +14,9 @@
   --color-navbar-color: #363946;
   --color-body-bg: #F8F7F4;
   --color-light-gray: #F8F7F4;
+    --color-green-dark: #08A700;
+    --color-light-blue: #95A5A6;
+    --color-red-main: #FF0000;
 
   /* Custom Width */
   --max-width-login: 449px;
@@ -22,7 +25,15 @@
   --font-size-xxs: 10px;
 
 }
-
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+main{
+    margin-top: 112px;
+}
 /* Define utility classes for the fonts */
 .font-dm-sans {
   font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
@@ -56,8 +67,8 @@
 }
 
 .container{
-  max-width: 1300px;
   margin: 0 auto;
+    padding: 0 30px;
 }
 
 header .menu-dropdown {
@@ -77,4 +88,33 @@ header .menu-dropdown {
   background-position: 0 0, 0 100%, 0 0, 100% 0;
   background-size: 20px 1px, 20px 1px, 1px 20px, 1px 20px;
   background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+}
+
+/* Notification paragraph styles */
+.notification-paragraph {
+  height: 25px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+.bg-gradient{
+  background: linear-gradient(to right, #F6E07D, #B2802C);
+}
+.border-gradient{
+  position: relative;
+  border-radius: 24px;
+}
+.border-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  padding: 1px;
+  background: linear-gradient(to right, #F6E07D, #B2802C);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.notification-paragraph.expanded {
+  height: auto;
 }
