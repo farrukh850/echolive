@@ -84,6 +84,48 @@ document.addEventListener('DOMContentLoaded', () => {
         closePopup(unsubscribePopup);
     }
 
+    // ===== Delete Card Popup =====
+    const deleteCardPopup = document.getElementById('delete-card');
+
+    if (deleteCardPopup) {
+        const deleteCardButtons = document.querySelectorAll('.delete-card-button');
+        const deleteCardCloseIcon = deleteCardPopup.querySelector('.close-icon');
+        const deleteCardCancelButton = deleteCardPopup.querySelector('button:first-of-type');
+
+        // Toggle popup visibility when delete card buttons are clicked
+        deleteCardButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                openPopup(deleteCardPopup);
+            });
+        });
+
+        // Close popup when clicking the close icon
+        if (deleteCardCloseIcon) {
+            deleteCardCloseIcon.addEventListener('click', () => {
+                closePopup(deleteCardPopup);
+            });
+        }
+
+        // Close popup when clicking the cancel button
+        if (deleteCardCancelButton) {
+            deleteCardCancelButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                closePopup(deleteCardPopup);
+            });
+        }
+
+        // Close popup when clicking outside the popup content
+        deleteCardPopup.addEventListener('click', (e) => {
+            if (e.target === deleteCardPopup) {
+                closePopup(deleteCardPopup);
+            }
+        });
+
+        // Initialize popup to be hidden by default
+        closePopup(deleteCardPopup);
+    }
+
     // ===== Shared Functions =====
     // Close all popups with Escape key
     document.addEventListener('keydown', (e) => {
@@ -93,6 +135,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (unsubscribePopup && isPopupOpen(unsubscribePopup)) {
                 closePopup(unsubscribePopup);
+            }
+            if (deleteCardPopup && isPopupOpen(deleteCardPopup)) {
+                closePopup(deleteCardPopup);
             }
         }
     });

@@ -22,7 +22,8 @@ export default defineConfig({
         'packages-empty': resolve(__dirname, 'settings/packages-empty.html'),
         'my-subscriptions': resolve(__dirname, 'settings/my-subscriptions.html'),
         'my-subscriptions-empty': resolve(__dirname, 'settings/my-subscriptions-empty.html'),
-        'my-interests': resolve(__dirname, 'settings/my-interests.html')
+        'my-interests': resolve(__dirname, 'settings/my-interests.html'),
+        'payment-details': resolve(__dirname, 'settings/payment-details.html')
       }
     }
   }
