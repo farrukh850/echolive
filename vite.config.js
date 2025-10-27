@@ -30,6 +30,8 @@ export default defineConfig({
         'team-members': resolve(__dirname, 'team/team-members.html'),
         'team-members-empty': resolve(__dirname, 'team/team-members-empty.html'),
         'invitation-rejected': resolve(__dirname, 'team/invitation-rejected.html'),
+        'invitation-sent': resolve(__dirname, 'team/invitation-sent.html'),
+        'invitation-sent-empty': resolve(__dirname, 'team/invitation-sent-empty.html'),
         'invitation-rejected-empty': resolve(__dirname, 'team/invitation-rejected-empty.html'),
         'my-posts': resolve(__dirname, 'my-posts/my-posts.html'),
         'my-earnings-tips': resolve(__dirname, 'my-earnings/my-earnings-tips.html'),
