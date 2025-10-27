@@ -15,6 +15,27 @@
     { "source": "/settings/my-subscriptions", "destination": "/settings/my-subscriptions.html" },
     { "source": "/settings/my-subscriptions-empty", "destination": "/settings/my-subscriptions-empty.html" },
     { "source": "/settings/my-interests", "destination": "/settings/my-interests.html" },
-    { "source": "/settings/payment-details", "destination": "/settings/payment-details.html" }
+    { "source": "/settings/payment-details", "destination": "/settings/payment-details.html" },
+    { "source": "/profiles/my-profile", "destination": "/profiles/my-profile" },
+    { "source": "/profiles/other-user-profile", "destination": "/profiles/other-user-profile" },
+    { "source": "/team/team-members", "destination": "/team/team-members" },
+    { "source": "/team/team-members-empty", "destination": "/team/team-members-empty" },
+    { "source": "/team/invitation-rejected", "destination": "/team/invitation-rejected" },
+    { "source": "/team/invitation-rejected-empty", "destination": "/team/invitation-rejected-empty" },
+    { "source": "/team/invitation-sent", "destination": "/team/invitation-sent" },
+    { "source": "/team/invitation-sent-empty", "destination": "/team/invitation-sent-empty" },
+    { "source": "/my-posts/my-posts", "destination": "/my-posts/my-posts" },
+    { "source": "/my-earnings/my-earnings-tips", "destination": "/my-earnings/my-earnings-tips" },
+    { "source": "/my-earnings/my-earnings-tips-empty", "destination": "/my-earnings/my-earnings-tips-empty" },
+    { "source": "/my-earnings/my-earnings-paid-posts", "destination": "/my-earnings/my-earnings-paid-posts" },
+    { "source": "/my-earnings/my-earnings-paid-posts-empty", "destination": "/my-earnings/my-earnings-paid-posts-empty" },
+    { "source": "/my-earnings/my-earnings-subscriptions", "destination": "/my-earnings/my-earnings-subscriptions" },
+    { "source": "/my-earnings/my-earnings-subscriptions-empty", "destination": "/my-earnings/my-earnings-subscriptions-empty" },
+    { "source": "/multi-user-account/multi-user-account", "destination": "/multi-user-account/multi-user-account" },
+    { "source": "/search/search", "destination": "/search/search.html" },
+    { "source": "/partners/partners", "destination": "/partners/partners.html" },
+    { "source": "/partners/partners-empty", "destination": "/partners/partners-empty.html" },
+    { "source": "/fans/fans", "destination": "/fans/fans.html" },
+    { "source": "/become-a-creator/become-a-creator", "destination": "/become-a-creator/become-a-creator.html" }
   ]
 }

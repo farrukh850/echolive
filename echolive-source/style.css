@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* Define custom font families */
+@theme {
+  --font-family-dm-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-family-montserrat: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-family-rubik: "Rubik", ui-sans-serif, system-ui, sans-serif;
+
+  /* Custom background color */
+  --color-grey-bg: #F7F4E7;
+  --color-yellow-main: #FAC52B;
+  --color-border-grey: rgba(0, 0, 0, 0.08);
+  --color-light-pink: #FFCACA;
+  --color-navbar-color: #363946;
+  --color-body-bg: #F8F7F4;
+  --color-light-gray: #F8F7F4;
+    --color-green-dark: #08A700;
+    --color-light-blue: #95A5A6;
+    --color-red-main: #FF0000;
+
+  /* Custom Width */
+  --max-width-login: 449px;
+  --max-width-chat-bubble: 680px;
+  /* Custom Font size */
+  --font-size-xxs: 10px;
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+main{
+    margin-top: 112px;
+}
+/* Define utility classes for the fonts */
+.font-dm-sans {
+  font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+}
+@media (max-width: 640px) {
+  .menu-dropdown {
+    top: auto !important;
+  }
+  header .menu-dropdown {
+    top: 80px !important;
+  }
+  .container{
+      padding: 0 !important;
+  }
+}
+.font-montserrat {
+  font-family: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-rubik {
+  font-family: "Rubik", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Custom utility class for max-width login */
+.max-w-login {
+  max-width: var(--max-width-login);
+}
+.max-width-chat-bubble {
+  max-width: var(--max-width-chat-bubble);
+}
+/* Custom utility class for font size */
+.text-xxs {
+  font-size: var(--font-size-xxs);
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1536px;
+  width: 100%;
+}
+
+header .menu-dropdown {
+  top: 80px !important;
+}
+.menu-dropdown {
+  top: 120%;
+}
+/* Custom dashed border with more spacing between dashes */
+.border-dashed-spaced {
+  border: 1px solid transparent;
+  background-image:
+    linear-gradient(90deg, #9ca3af 30%, transparent 50%),
+    linear-gradient(90deg, #9ca3af 30%, transparent 50%),
+    linear-gradient(0deg, #9ca3af 30%, transparent 50%),
+    linear-gradient(0deg, #9ca3af 30%, transparent 50%);
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  background-size: 20px 1px, 20px 1px, 1px 20px, 1px 20px;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+}
+
+/* Notification paragraph styles */
+.notification-paragraph {
+  height: 25px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+.bg-gradient{
+  background: linear-gradient(to right, #F6E07D, #B2802C);
+}
+.border-gradient{
+  position: relative;
+  border-radius: 24px;
+}
+.border-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  padding: 1px;
+  background: linear-gradient(to right, #F6E07D, #B2802C);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.notification-paragraph.expanded {
+  height: auto;
+}

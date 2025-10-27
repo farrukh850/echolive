@@ -57,27 +57,27 @@
             <div class="grid grid-cols-12 gap-5 items-start">
                 <div class="col-span-12 lg:col-span-9 px-4 lg:px-6 py-6 rounded-3xl bg-white h-full">
                     <div class="flex items-center justify-between">
-                        <h2 class="font-montserrat font-semibold text-3xl">Setting</h2>
+                        <h2 class="font-montserrat font-semibold text-2xl lg:text-3xl">Setting</h2>
                         <button class="px-4 py-5 h-12 flex items-center justify-center bg-yellow-main border border-yellow-main font-rubik font-medium text-base lg:text-lg rounded-xl cursor-pointer">Save Changes</button>
                     </div>
-                    <div class="flex items-center rounded-xl border border-gray-300 overflow-hidden w-full my-10">
-                        <button class="p-3 bg-white gap-2 border-r border-gray-300 font-montserrat text-xs lg:text-sm font-semibold flex-auto cursor-pointer">
+                    <div class="flex flex-col lg:flex-row items-center rounded-xl border border-gray-300 overflow-hidden w-full my-10">
+                        <button class="p-3 bg-white gap-2 lg:border-r border-gray-300 font-montserrat text-xs lg:text-sm font-semibold flex-1 cursor-pointer w-full">
                             My profile
                         </button>
-                        <button class="p-3 bg-white  gap-2 font-montserrat text-xs lg:text-sm border-r border-gray-300 font-semibold flex-auto cursor-pointer">
+                        <button class="p-3 bg-white  gap-2 font-montserrat text-xs lg:text-sm lg:border-r border-gray-300 font-semibold flex-1 cursor-pointer w-full">
                             Subscription Settings
                         </button>
-                        <button class="p-3 bg-gray-100 gap-2 border-r border-gray-300 font-montserrat text-xs lg:text-sm font-semibold flex-auto cursor-pointer">
+                        <button class="p-3 bg-gray-100 gap-2 lg:border-r border-gray-300 font-montserrat text-xs lg:text-sm font-semibold flex-1 cursor-pointer w-full">
                             My Subscription
                         </button>
-                        <button class="p-3 bg-white gap-2 border-r border-gray-300 font-montserrat text-xs lg:text-sm font-semibold flex-auto cursor-pointer">
+                        <button class="p-3 bg-white gap-2 lg:border-r border-gray-300 font-montserrat text-xs lg:text-sm font-semibold flex-1 cursor-pointer w-full">
                             My Interests
                         </button>
-                        <button class="p-3 bg-white gap-2 font-montserrat text-xs lg:text-sm font-semibold flex-auto cursor-pointer">
+                        <button class="p-3 bg-white gap-2 font-montserrat text-xs lg:text-sm font-semibold flex-1 cursor-pointer w-full">
                             Payment Detail
                         </button>
                     </div>
-                    <div class="mt-6 p-6 bg-light-gray rounded-2xl">
+                    <div class="hidden lg:block mt-6 p-6 bg-light-gray rounded-2xl">
                         <!-- Fixed table structure -->
                         <table class="w-full flex flex-col gap-4">
                             <thead>
@@ -103,6 +103,31 @@
                         </table>
 
 
+                    </div>
+                    <div class="p-4 bg-light-gray rounded-2xl lg:hidden flex flex-col gap-3 mt-4">
+                        <div class="flex flex-col gap-3 p-4 bg-white rounded-2xl">
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm text-navbar-color/60 uppercase">Subscribe To</p>
+                                <p class="text-sm font-semibold">Jenny B <b class="text-sm text-blue-500 font-medium">(@jenny-b)</b></p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm text-navbar-color/60 uppercase">Subscr. Date</p>
+                                <p class="text-sm font-semibold text-navbar-color/60">September 10, 2025</p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm uppercase text-navbar-color/60">Renewal Date</p>
+                                <p class="text-sm font-semibold">March 10, 2026</p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm uppercase text-navbar-color/60">Subscribed</p>
+                                <p class="text-sm font-semibold text-green-dark">Yes</p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm uppercase text-navbar-color/60">Status</p>
+                                <span class="px-4 py-2 h-8.5 flex items-center justify-center bg-green-dark/10 text-green-dark rounded-3xl font-montserrat text-sm w-24">Active</span>
+                            </div>
+                            <button class="unsubscribe-button py-3 px-10 w-full border border-black/10 rounded-xl text-red-main font-medium">Unsubscribe</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-span-3 flex flex-col gap-2 px-4 lg:px-0">
@@ -193,7 +218,7 @@
 
 <!-- Unsubscribe -->
 <div id="unsubscribe" class="bg-black/50 fixed top-0 left-0 right-0 bottom-0 z-1000">
-    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-3xl w-full max-w-170 p-8">
+    <div class="fixed bottom-0 left-0 right-0 lg:bottom-auto lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 bg-white rounded-3xl w-full max-w-170 p-4 lg:p-8">
         <div class="flex items-center justify-between pb-6 border-b border-black/10">
             <h2 class="font-montserrat font-semibold text-2xl">Unsubscribe?</h2>
             <div class="close-icon cursor-pointer"><img src="/images/close-icon.svg" alt="Close Icon"></div>

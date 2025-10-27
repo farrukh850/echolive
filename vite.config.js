@@ -23,7 +23,26 @@ export default defineConfig({
         'my-subscriptions': resolve(__dirname, 'settings/my-subscriptions.html'),
         'my-subscriptions-empty': resolve(__dirname, 'settings/my-subscriptions-empty.html'),
         'my-interests': resolve(__dirname, 'settings/my-interests.html'),
-        'payment-details': resolve(__dirname, 'settings/payment-details.html')
+        'payment-details': resolve(__dirname, 'settings/payment-details.html'),
+        'my-profile': resolve(__dirname, 'profiles/my-profile.html'),
+        'other-user-profile': resolve(__dirname, 'profiles/other-user-profile.html'),
+        'team-members': resolve(__dirname, 'teams/team-members.html'),
+        'team-members-empty': resolve(__dirname, 'teams/team-members-empty.html'),
+        'invitation-rejected': resolve(__dirname, 'teams/invitation-rejected.html'),
+        'invitation-rejected-empty': resolve(__dirname, 'teams/invitation-rejected-empty.html'),
+        'my-posts': resolve(__dirname, 'my-posts/my-posts.html'),
+        'my-earnings-tips': resolve(__dirname, 'my-posts/my-earnings-tips.html'),
+        'my-earnings-tips-empty': resolve(__dirname, 'my-posts/my-earnings-tips-empty.html'),
+        'my-earnings-paid-posts': resolve(__dirname, 'my-posts/my-earnings-paid-posts.html'),
+        'my-earnings-paid-posts-empty': resolve(__dirname, 'my-posts/my-earnings-paid-posts-empty.html'),
+        'my-earnings-subscriptions': resolve(__dirname, 'my-posts/my-earnings-subscriptions.html'),
+        'my-earnings-subscriptions-empty': resolve(__dirname, 'my-posts/my-earnings-subscriptions-empty.html'),
+        'multi-user-account': resolve(__dirname, 'multi-user-account/multi-user-account.html'),
+        'search': resolve(__dirname, 'search/search.html'),
+        'partners': resolve(__dirname, 'partners/partners.html'),
+        'partners-empty': resolve(__dirname, 'partners/partners-empty.html'),
+        'fans': resolve(__dirname, 'fans/fans.html'),
+        'become-a-creator': resolve(__dirname, 'become-a-creator/become-a-creator.html')
       }
     }
   }

@@ -80,22 +80,22 @@
                     <form action="#">
                         <div class="flex flex-col">
                             <div class="flex items-center justify-between mb-4">
-                                <p class="font-montserrat text-lg font-semibold">Regular Price</p>
-                                <p class="font-montserrat text-base font-medium">Monthly subscription price</p>
+                                <p class="font-montserrat text-base lg:text-lg font-semibold">Regular Price</p>
+                                <p class="font-montserrat text-sm lg:text-base font-medium">Monthly subscription price</p>
                             </div>
                             <input type="text" value="12.99" id="username" name="username" class="h-18 rounded-2xl border hover:bg-light-gray border-black/10 text-base font-dm-sans font-medium p-6 w-full focus:outline-none focus:border-yellow-main transition-all duration-300">
                             <small class="text-navbar-color/60 mt-1">Add the regular price to be able to create packages.</small>
                         </div>
                         <div class="flex flex-col gap-3 w-full mt-6">
-                            <label for="about-me" class="text-lg font-montserrat font-semibold">Description</label>
+                            <label for="about-me" class="text-base lg:text-lg font-montserrat font-semibold">Description</label>
                             <textarea name="about-me" id="about-me" class="h-30 hover:bg-light-gray rounded-2xl border border-black/10 text-base font-dm-sans font-medium p-6 w-full focus:outline-none text-navbar-color/60 focus:border-yellow-main transition-all duration-30">Describe what features and benefits your subscribers will get.</textarea>
                         </div>
                     </form>
                     <div class="flex items-center justify-between mt-20">
-                        <h2 class="font-montserrat font-semibold text-2xl">My Packages</h2>
+                        <h2 class="font-montserrat font-semibold text-xl lg:text-2xl">My Packages</h2>
                         <button class="px-4 py-5 h-12 gap-1 flex items-center justify-center bg-yellow-main border border-yellow-main font-rubik font-medium text-base lg:text-lg rounded-xl cursor-pointer"><img src="/images/plus.svg" alt="Plus">Create  Package</button>
                     </div>
-                    <div class="mt-6 p-6 bg-light-gray rounded-2xl">
+                    <div class="hidden lg:block mt-6 p-6 bg-light-gray rounded-2xl">
                         <table class="w-full flex flex-col gap-4">
                             <thead>
                                 <tr class="flex items-center justify-between px-6">
@@ -144,8 +144,8 @@
                                     <td class="flex-1"><span class="px-4 py-2 h-8.5 flex items-center justify-center bg-red-main/10 text-red-main rounded-3xl font-montserrat text-base w-24">Expired</span></td>
                                     <td class="flex-1 flex items-center gap-6">
                                         <div class="relative w-14 h-7">
-                                            <input type="checkbox" id="package-3" class="sr-only peer">
-                                            <label for="package-3" class="block w-14 h-7 bg-gray-300 rounded-full cursor-pointer">
+                                            <input type="checkbox" id="package-5" class="sr-only peer">
+                                            <label for="package-5" class="block w-14 h-7 bg-gray-300 rounded-full cursor-pointer">
                                                 <span class="absolute left-1 top-1 w-5 h-5 bg-white rounded-full transition-transform duration-200 peer-checked:translate-x-7 z-10"></span>
                                             </label>
                                             <div class="absolute inset-0 rounded-full bg-gray-300 transition-colors duration-200 peer-checked:bg-yellow-main pointer-events-none"></div>
@@ -156,6 +156,89 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="p-4 bg-light-gray rounded-2xl lg:hidden flex flex-col gap-3 mt-4">
+                        <div class="flex flex-col gap-3 p-4 bg-white rounded-2xl">
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm text-navbar-color/60 uppercase">Period</p>
+                                <p class="text-sm font-semibold">30 Days</p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm text-navbar-color/60 uppercase">Amount</p>
+                                <p class="text-sm font-semibold">$24.99</p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm text-navbar-color/60 uppercase">Status</p>
+                                <span class="px-4 py-2 h-8.5 flex items-center justify-center bg-green-dark/10 text-green-dark rounded-3xl font-montserrat text-sm w-24">Active</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="relative w-14 h-7">
+                                    <input type="checkbox" id="show-status2" class="sr-only peer">
+                                    <label for="show-status2" class="block w-14 h-7 bg-gray-300 rounded-full cursor-pointer">
+                                        <span class="absolute left-1 top-1 w-5 h-5 bg-white rounded-full transition-transform duration-200 peer-checked:translate-x-7 z-10"></span>
+                                    </label>
+                                    <div class="absolute inset-0 rounded-full bg-gray-300 transition-colors duration-200 peer-checked:bg-yellow-main pointer-events-none"></div>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <button class="edit-popup-button cursor-pointer w-8.5 h-8.5 flex items-center justify-center bg-light-gray rounded-sm"><img src="/images/pencil.svg" alt="Pencil Icon"></button>
+                                    <button class="w-8.5 h-8.5 flex items-center justify-center bg-light-gray rounded-sm"><img src="/images/delete-dark.svg" alt="Pencil Icon"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3 p-4 bg-white rounded-2xl">
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm text-navbar-color/60 uppercase">Period</p>
+                                <p class="text-sm font-semibold">3 Month</p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm text-navbar-color/60 uppercase">Amount</p>
+                                <p class="text-sm font-semibold">$24.99</p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm text-navbar-color/60 uppercase">Status</p>
+                                <span class="px-4 py-2 h-8.5 flex items-center justify-center bg-light-blue/10 text-light-blue rounded-3xl font-montserrat text-sm w-24">Inactive</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="relative w-14 h-7">
+                                    <input type="checkbox" id="package-3" class="sr-only peer">
+                                    <label for="package-3" class="block w-14 h-7 bg-gray-300 rounded-full cursor-pointer">
+                                        <span class="absolute left-1 top-1 w-5 h-5 bg-white rounded-full transition-transform duration-200 peer-checked:translate-x-7 z-10"></span>
+                                    </label>
+                                    <div class="absolute inset-0 rounded-full bg-gray-300 transition-colors duration-200 peer-checked:bg-yellow-main pointer-events-none"></div>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <button class="edit-popup-button cursor-pointer w-8.5 h-8.5 flex items-center justify-center bg-light-gray rounded-sm"><img src="/images/pencil.svg" alt="Pencil Icon"></button>
+                                    <button class="w-8.5 h-8.5 flex items-center justify-center bg-light-gray rounded-sm"><img src="/images/delete-dark.svg" alt="Pencil Icon"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3 p-4 bg-white rounded-2xl">
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm text-navbar-color/60 uppercase">Period</p>
+                                <p class="text-sm font-semibold">6 Month</p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm text-navbar-color/60 uppercase">Amount</p>
+                                <p class="text-sm font-semibold">$24.99</p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm text-navbar-color/60 uppercase">Status</p>
+                                <span class="px-4 py-2 h-8.5 flex items-center justify-center bg-red-main/10 text-red-main rounded-3xl font-montserrat text-sm w-24">Expired</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="relative w-14 h-7">
+                                    <input type="checkbox" id="package-4" class="sr-only peer">
+                                    <label for="package-4" class="block w-14 h-7 bg-gray-300 rounded-full cursor-pointer">
+                                        <span class="absolute left-1 top-1 w-5 h-5 bg-white rounded-full transition-transform duration-200 peer-checked:translate-x-7 z-10"></span>
+                                    </label>
+                                    <div class="absolute inset-0 rounded-full bg-gray-300 transition-colors duration-200 peer-checked:bg-yellow-main pointer-events-none"></div>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <button class="edit-popup-button cursor-pointer w-8.5 h-8.5 flex items-center justify-center bg-light-gray rounded-sm"><img src="/images/pencil.svg" alt="Pencil Icon"></button>
+                                    <button class="w-8.5 h-8.5 flex items-center justify-center bg-light-gray rounded-sm"><img src="/images/delete-dark.svg" alt="Pencil Icon"></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-span-12 lg:col-span-3 flex flex-col gap-2 px-4 lg:px-0">
@@ -245,7 +328,7 @@
 
 <!-- Edit popup -->
 <div id="edit-package-popup" class="bg-black/50 fixed top-0 left-0 right-0 bottom-0 z-1000">
-    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-3xl w-full max-w-170 p-8">
+    <div class="fixed bottom-0 left-0 right-0 lg:bottom-auto lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 bg-white rounded-3xl w-full max-w-170 p-4 lg:p-8">
         <div class="flex items-center justify-between pb-6 border-b border-black/10">
             <h2 class="font-montserrat font-semibold text-2xl">Edit Package</h2>
             <div class="close-icon cursor-pointer"><img src="/images/close-icon.svg" alt="Close Icon"></div>
@@ -258,11 +341,14 @@
                 </div>
                 <div class="flex flex-col w-full gap-3">
                     <label for="period-type" class="text-lg font-montserrat font-semibold text-black/50">Period Type</label>
-                    <select name="period-type" id="period-type" class="h-18 rounded-2xl border hover:bg-light-gray border-black/10 text-base font-dm-sans font-medium p-6 w-full focus:outline-none focus:border-yellow-main transition-all duration-300">
-                        <option value="days">Days</option>
-                        <option value="weeks">Weeks</option>
-                        <option value="Months">Months</option>
-                    </select>
+                    <div class="relative">
+                        <select name="period-type" id="period-type" class="h-18 rounded-2xl border hover:bg-light-gray border-black/10 text-base font-dm-sans font-medium p-6 w-full focus:outline-none focus:border-yellow-main transition-all duration-300 appearance-none">
+                            <option value="days">Days</option>
+                            <option value="weeks">Weeks</option>
+                            <option value="Months">Months</option>
+                        </select>
+                        <img src="/images/caret-down.svg" alt="Caret Down Icon" class="absolute top-1/2 right-5 -translate-y-1/2">
+                    </div>
                 </div>
             </div>
             <div class="flex flex-col">
@@ -273,8 +359,8 @@
                 <input type="text" value="5.99" id="amount" name="amount" class="h-18 rounded-2xl border hover:bg-light-gray border-black/10 text-base font-dm-sans font-medium p-6 w-full focus:outline-none focus:border-yellow-main transition-all duration-300">
             </div>
             <div class="flex items-center gap-5">
-                <button class="flex-1 h-16 flex items-center justify-center py-6 px-10 rounded-xl text-lg font-medium font-rubik border border-black/10 cursor-pointer">Cancel</button>
-                <button class="flex-1 h-16 flex items-center justify-center py-6 px-10 rounded-xl text-lg bg-yellow-main font-medium font-rubik border border-light-gray cursor-pointer">Save Changes</button>
+                <button class="flex-1 h-16 flex items-center justify-center py-6 px-5 lg:px-10 rounded-xl text-base lg:text-lg font-medium font-rubik border border-black/10 cursor-pointer">Cancel</button>
+                <button class="flex-1 h-16 flex items-center justify-center py-6 px-5 lg: px-10 rounded-xl text-base lg:text-lg bg-yellow-main font-medium font-rubik border border-light-gray cursor-pointer">Save Changes</button>
             </div>
         </form>
     </div>

@@ -57,23 +57,23 @@
             <div class="grid grid-cols-12 gap-5 items-start">
                 <div class="col-span-12 lg:col-span-9 px-4 lg:px-6 py-6 rounded-3xl bg-white h-full">
                     <div class="flex items-center justify-between">
-                        <h2 class="font-montserrat font-semibold text-3xl">Setting</h2>
+                        <h2 class="font-montserrat font-semibold text-2xl lg:text-3xl">Setting</h2>
                         <button class="px-4 py-5 h-12 flex items-center justify-center bg-yellow-main border border-yellow-main font-rubik font-medium text-base lg:text-lg rounded-xl cursor-pointer">Save Changes</button>
                     </div>
-                    <div class="flex items-center rounded-xl border border-gray-300 overflow-hidden w-full my-10">
-                        <button class="p-3 bg-white gap-2 border-r border-gray-300 font-montserrat text-xs lg:text-sm font-semibold flex-auto cursor-pointer">
+                    <div class="flex flex-col lg:flex-row items-center rounded-xl border border-gray-300 overflow-hidden w-full my-10">
+                        <button class="p-3 bg-white gap-2 lg:border-r border-gray-300 font-montserrat text-xs lg:text-sm font-semibold flex-1 cursor-pointer w-full">
                             My profile
                         </button>
-                        <button class="p-3 bg-white  gap-2 font-montserrat text-xs lg:text-sm border-r border-gray-300 font-semibold flex-auto cursor-pointer">
+                        <button class="p-3 bg-white  gap-2 font-montserrat text-xs lg:text-sm lg:border-r border-gray-300 font-semibold flex-1 cursor-pointer w-full">
                             Subscription Settings
                         </button>
-                        <button class="p-3 bg-gray-100 gap-2 border-r border-gray-300 font-montserrat text-xs lg:text-sm font-semibold flex-auto cursor-pointer">
+                        <button class="p-3 bg-gray-100 gap-2 lg:border-r border-gray-300 font-montserrat text-xs lg:text-sm font-semibold flex-1 cursor-pointer w-full">
                             My Subscription
                         </button>
-                        <button class="p-3 bg-white gap-2 border-r border-gray-300 font-montserrat text-xs lg:text-sm font-semibold flex-auto cursor-pointer">
+                        <button class="p-3 bg-white gap-2 lg:border-r border-gray-300 font-montserrat text-xs lg:text-sm font-semibold flex-1 cursor-pointer w-full">
                             My Interests
                         </button>
-                        <button class="p-3 bg-white gap-2 font-montserrat text-xs lg:text-sm font-semibold flex-auto cursor-pointer">
+                        <button class="p-3 bg-white gap-2 font-montserrat text-xs lg:text-sm font-semibold flex-1 cursor-pointer w-full">
                             Payment Detail
                         </button>
                     </div>
@@ -170,24 +170,6 @@
     </section>
 </main>
 
-
-<!-- Unsubscribe -->
-<div id="unsubscribe" class="bg-black/50 fixed top-0 left-0 right-0 bottom-0 z-1000">
-    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-3xl w-full max-w-170 p-8">
-        <div class="flex items-center justify-between pb-6 border-b border-black/10">
-            <h2 class="font-montserrat font-semibold text-2xl">Unsubscribe?</h2>
-            <div class="close-icon cursor-pointer"><img src="/images/close-icon.svg" alt="Close Icon"></div>
-        </div>
-        <div class="flex flex-col gap-5 text-center my-8">
-            <h5 class="text-xl font-semibold font-montserrat">Are you sure you want to unsubscribe from <b class="font-semibold text-blue-500">@jenny-b</b>?</h5>
-            <p class="text-base font-montserrat">You won’t see new posts or updates, but you can follow them again anytime.</p>
-        </div>
-        <div class="flex items-center gap-5">
-            <button class="flex-1 h-16 flex items-center justify-center py-6 px-10 rounded-xl text-lg font-medium font-rubik border border-black/10 cursor-pointer">Cancel</button>
-            <button class="flex-1 h-16 flex items-center justify-center py-6 px-10 rounded-xl text-lg bg-red-main font-medium font-rubik text-white border border-light-gray cursor-pointer">Unsubscribe</button>
-        </div>
-    </div>
-</div>
 <script type="module" src="/src/js/slider.js"></script>
 <script type="module" src="/src/js/menu-dropdown.js"></script>
 <script type="module" src="/src/js/popup.js"></script>

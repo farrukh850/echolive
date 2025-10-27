@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    { "source": "/authentication/step-1", "destination": "/authentication/step-1.html" },
+    { "source": "/authentication/step-2", "destination": "/authentication/step-2.html" },
+    { "source": "/authentication/step-3", "destination": "/authentication/step-3.html" },
+    { "source": "/collections/collection-posts", "destination": "/collections/collection-posts.html" },
+    { "source": "/collections/collection-posts-empty", "destination": "/collections/collection-posts-empty.html" },
+    { "source": "/create-new-post", "destination": "/create-new-post/create-new-post.html" },
+    { "source": "/messages", "destination": "/messages/messages.html" },
+    { "source": "/notifications", "destination": "/notifications/notifications.html" },
+    { "source": "/notification-empty", "destination": "/notifications/notification-empty.html" },
+    { "source": "/settings/my-profile", "destination": "/settings/my-profile-setting.html" },
+    { "source": "/settings/subscription", "destination": "/settings/subscription-settings.html" },
+    { "source": "/settings/packages-empty", "destination": "/settings/packages-empty.html" },
+    { "source": "/settings/my-subscriptions", "destination": "/settings/my-subscriptions.html" },
+    { "source": "/settings/my-subscriptions-empty", "destination": "/settings/my-subscriptions-empty.html" },
+    { "source": "/settings/my-interests", "destination": "/settings/my-interests.html" },
+    { "source": "/settings/payment-details", "destination": "/settings/payment-details.html" }
+  ]
+}

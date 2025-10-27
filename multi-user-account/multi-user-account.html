@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Echolive</title>
+</head>
+<body class="bg-body-bg">
+<!-- Navbar -->
+<header class="flex items-center justify-center p-4 lg:py-2 lg:px-8 bg-white z-50 relative">
+    <a href="collection-posts.html" class="flex-auto"><img src="/images/logo.svg" class="w-36" alt="Logo"></a>
+    <nav class="hidden lg:block flex-auto">
+        <ul class="flex gap-6 justify-center">
+            <li><a href="#" class="font-montserrat text-lg font-medium text-navbar-color hover:text-yellow-main transform transition-all">Home</a></li>
+            <li><a href="#" class="font-montserrat text-lg font-medium text-navbar-color hover:text-yellow-main transform transition-all">Notifications</a></li>
+            <li><a href="#" class="font-montserrat text-lg font-medium text-navbar-color hover:text-yellow-main transform transition-all">Messages</a></li>
+            <li><a href="#" class="font-montserrat text-lg font-medium text-navbar-color hover:text-yellow-main transform transition-all">Collections</a></li>
+            <li><a href="#" class="font-montserrat text-lg font-medium text-navbar-color hover:text-yellow-main transform transition-all">Media Vault</a></li>
+        </ul>
+    </nav>
+    <div class="flex gap-2 flex-auto justify-end ">
+        <button class="w-12 lg:w-18 h-12 lg:h-18 flex items-center justify-center border border-black/10 bg-gray-50 rounded-xl cursor-pointer"><img src="/images/search.svg" alt="Search"></button>
+        <button class="hidden lg:flex px-6  py-5 h-18 items-center justify-center border border-black/10 bg-gray-50 text-xl font-montserrat font-medium rounded-xl cursor-pointer">$1400.32<img src="/images/wallet.svg" alt="wallet" class="pl-4.5"></button>
+        <div class="p-2 w-12 lg:w-50 h-12 lg:h-18 flex items-center gap-3 border border-black/10 bg-gray-50 text-xl font-montserrat font-medium rounded-xl cursor-pointer menu-dropdown-button relative"><img src="/images/avatar.svg" alt="Avatar">
+            <div class="flex-col hidden lg:flex">
+                <p class="font-montserrat text-lg font-semibold">JohnDoe</p>
+                <p class="font-montserrat text-sm font-semibold text-black/60">@johndoe12</p>
+            </div>
+            <div class="menu-dropdown hidden bg-white rounded-bl-xl rounded-br-xl lg:rounded-xl border border-gray-200 py-2 min-w-3xs w-full fixed top-20 left-0 lg:absolute right-0 lg:left-auto lg:top-full z-20 shadow-md">
+                <ul class="flex flex-col">
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Create New Post</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Posts</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Profile</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Become a Creator</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Upgrade to Multi-User account</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Media Vault</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Settings</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 border-b border-gray-300 hover:bg-light-gray hover:text-gray-800">Help</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium flex items-center text-gray-500 gap-2 hover:bg-light-gray hover:text-gray-800"><img src="/images/logout.svg" alt="Logout"> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="lg:mt-6">
+    <section class="pb-20">
+        <div class="container px-0">
+            <div class="grid grid-cols-12 gap-5 items-start">
+                <div class="col-span-12 lg:col-span-9 px-4 lg:px-6 py-6 rounded-0 md:rounded-3xl bg-white h-full">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center justify-between">
+                            <h1 class="text-2xl lg:text-3xl font-montserrat font-semibold">Become a Multi User Account</h1>
+                            <button class="py-2 hidden h-12 lg:flex items-center justify-center px-6 bg-yellow-main font-rubik font-medium text-lg rounded-xl">Submit for Approval</button>
+                        </div>
+                        <p class="text-sm font-montserrat font-medium text-black/50">A multi-user account is reserved for businesses who want to be able to create a team of content creators under their account.<br> If you are not a business but still want to be able to create and monetize content, then upgrade your account to a <a href="#" class="text-blue-500">Creator Account</a></p>
+                    </div>
+                    <form action="#" class="mt-10 flex flex-col gap-6">
+                        <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+                            <div class="flex flex-col gap-3 w-full">
+                                <label class="font-montserrat font-semibold text-base lg:text-lg" for="first-name">First Name </label>
+                                <input type="text" name="title" id="first-name" placeholder="Enter First Name" class="w-full h-15 lg:h-18 p-6 border border-gray-300 rounded-2xl font-dm-sans text-base font-medium placeholder:text-black/70 text-black/70 focus:outline-none focus:border-yellow-main transition-all">
+                            </div>
+                            <div class="flex flex-col gap-3 w-full">
+                                <label class="font-montserrat font-semibold text-base lg:text-lg" for="last-name">Last Name</label>
+                                <input type="text" name="last-name" id="last-name" placeholder="Enter Last Name" class="w-full h-15 lg:h-18 p-6 border border-gray-300 rounded-2xl font-dm-sans text-base font-medium placeholder:text-black/70 text-black/70 focus:outline-none focus:border-yellow-main transition-all">
+                            </div>
+                        </div>
+                        <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+                            <div class="flex flex-col gap-3 w-full">
+                                <label class="font-montserrat font-semibold text-base lg:text-lg" for="country">Country</label>
+                                <select name="country" id="country" class="w-full h-15 lg:h-18 p-6 border border-gray-300 rounded-2xl font-dm-sans text-base font-medium placeholder:text-black/70 text-black/70 focus:outline-none focus:border-yellow-main transition-all">
+                                    <option>select country</option>
+                                    <option value="AF">Afghanistan</option>
+                                    <option value="AX">Åland Islands</option>
+                                    <option value="AL">Albania</option>
+                                    <option value="DZ">Algeria</option>
+                                    <option value="AS">American Samoa</option>
+                                    <option value="AD">Andorra</option>
+                                    <option value="AO">Angola</option>
+                                    <option value="AI">Anguilla</option>
+                                    <option value="AQ">Antarctica</option>
+                                    <option value="AG">Antigua and Barbuda</option>
+                                    <option value="AR">Argentina</option>
+                                    <option value="AM">Armenia</option>
+                                    <option value="AW">Aruba</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="AT">Austria</option>
+                                    <option value="AZ">Azerbaijan</option>
+                                    <option value="BS">Bahamas</option>
+                                    <option value="BH">Bahrain</option>
+                                    <option value="BD">Bangladesh</option>
+                                    <option value="BB">Barbados</option>
+                                    <option value="BY">Belarus</option>
+                                    <option value="BE">Belgium</option>
+                                    <option value="BZ">Belize</option>
+                                    <option value="BJ">Benin</option>
+                                    <option value="BM">Bermuda</option>
+                                    <option value="BT">Bhutan</option>
+                                    <option value="BO">Bolivia (Plurinational State of)</option>
+                                    <option value="BA">Bosnia and Herzegovina</option>
+                                    <option value="BW">Botswana</option>
+                                    <option value="BV">Bouvet Island</option>
+                                    <option value="BR">Brazil</option>
+                                    <option value="IO">British Indian Ocean Territory</option>
+                                    <option value="BN">Brunei Darussalam</option>
+                                    <option value="BG">Bulgaria</option>
+                                    <option value="BF">Burkina Faso</option>
+                                    <option value="BI">Burundi</option>
+                                    <option value="CV">Cabo Verde</option>
+                                    <option value="KH">Cambodia</option>
+                                    <option value="CM">Cameroon</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="BQ">Caribbean Netherlands</option>
+                                    <option value="KY">Cayman Islands</option>
+                                    <option value="CF">Central African Republic</option>
+                                    <option value="TD">Chad</option>
+                                    <option value="CL">Chile</option>
+                                    <option value="CN">China</option>
+                                    <option value="CX">Christmas Island</option>
+                                    <option value="CC">Cocos (Keeling) Islands</option>
+                                    <option value="CO">Colombia</option>
+                                    <option value="KM">Comoros</option>
+                                    <option value="CG">Congo</option>
+                                    <option value="CD">Congo, Democratic Republic of the</option>
+                                    <option value="CK">Cook Islands</option>
+                                    <option value="CR">Costa Rica</option>
+                                    <option value="HR">Croatia</option>
+                                    <option value="CU">Cuba</option>
+                                    <option value="CW">Curaçao</option>
+                                    <option value="CY">Cyprus</option>
+                                    <option value="CZ">Czech Republic</option>
+                                    <option value="CI">Côte d'Ivoire</option>
+                                    <option value="DK">Denmark</option>
+                                    <option value="DJ">Djibouti</option>
+                                    <option value="DM">Dominica</option>
+                                    <option value="DO">Dominican Republic</option>
+                                    <option value="EC">Ecuador</option>
+                                    <option value="EG">Egypt</option>
+                                    <option value="SV">El Salvador</option>
+                                    <option value="GQ">Equatorial Guinea</option>
+                                    <option value="ER">Eritrea</option>
+                                    <option value="EE">Estonia</option>
+                                    <option value="SZ">Eswatini (Swaziland)</option>
+                                    <option value="ET">Ethiopia</option>
+                                    <option value="FK">Falkland Islands (Malvinas)</option>
+                                    <option value="FO">Faroe Islands</option>
+                                    <option value="FJ">Fiji</option>
+                                    <option value="FI">Finland</option>
+                                    <option value="FR">France</option>
+                                    <option value="GF">French Guiana</option>
+                                    <option value="PF">French Polynesia</option>
+                                    <option value="TF">French Southern Territories</option>
+                                    <option value="GA">Gabon</option>
+                                    <option value="GM">Gambia</option>
+                                    <option value="GE">Georgia</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="GH">Ghana</option>
+                                    <option value="GI">Gibraltar</option>
+                                    <option value="GR">Greece</option>
+                                    <option value="GL">Greenland</option>
+                                    <option value="GD">Grenada</option>
+                                    <option value="GP">Guadeloupe</option>
+                                    <option value="GU">Guam</option>
+                                    <option value="GT">Guatemala</option>
+                                    <option value="GG">Guernsey</option>
+                                    <option value="GN">Guinea</option>
+                                    <option value="GW">Guinea-Bissau</option>
+                                    <option value="GY">Guyana</option>
+                                    <option value="HT">Haiti</option>
+                                    <option value="HM">Heard Island and Mcdonald Islands</option>
+                                    <option value="HN">Honduras</option>
+                                    <option value="HK">Hong Kong</option>
+                                    <option value="HU">Hungary</option>
+                                    <option value="IS">Iceland</option>
+                                    <option value="IN">India</option>
+                                    <option value="ID">Indonesia</option>
+                                    <option value="IR">Iran</option>
+                                    <option value="IQ">Iraq</option>
+                                    <option value="IE">Ireland</option>
+                                    <option value="IM">Isle of Man</option>
+                                    <option value="IL">Israel</option>
+                                    <option value="IT">Italy</option>
+                                    <option value="JM">Jamaica</option>
+                                    <option value="JP">Japan</option>
+                                    <option value="JE">Jersey</option>
+                                    <option value="JO">Jordan</option>
+                                    <option value="KZ">Kazakhstan</option>
+                                    <option value="KE">Kenya</option>
+                                    <option value="KI">Kiribati</option>
+                                    <option value="KP">Korea, North</option>
+                                    <option value="KR">Korea, South</option>
+                                    <option value="XK">Kosovo</option>
+                                    <option value="KW">Kuwait</option>
+                                    <option value="KG">Kyrgyzstan</option>
+                                    <option value="LA">Lao People's Democratic Republic</option>
+                                    <option value="LV">Latvia</option>
+                                    <option value="LB">Lebanon</option>
+                                    <option value="LS">Lesotho</option>
+                                    <option value="LR">Liberia</option>
+                                    <option value="LY">Libya</option>
+                                    <option value="LI">Liechtenstein</option>
+                                    <option value="LT">Lithuania</option>
+                                    <option value="LU">Luxembourg</option>
+                                    <option value="MO">Macao</option>
+                                    <option value="MK">Macedonia North</option>
+                                    <option value="MG">Madagascar</option>
+                                    <option value="MW">Malawi</option>
+                                    <option value="MY">Malaysia</option>
+                                    <option value="MV">Maldives</option>
+                                    <option value="ML">Mali</option>
+                                    <option value="MT">Malta</option>
+                                    <option value="MH">Marshall Islands</option>
+                                    <option value="MQ">Martinique</option>
+                                    <option value="MR">Mauritania</option>
+                                    <option value="MU">Mauritius</option>
+                                    <option value="YT">Mayotte</option>
+                                    <option value="MX">Mexico</option>
+                                    <option value="FM">Micronesia</option>
+                                    <option value="MD">Moldova</option>
+                                    <option value="MC">Monaco</option>
+                                    <option value="MN">Mongolia</option>
+                                    <option value="ME">Montenegro</option>
+                                    <option value="MS">Montserrat</option>
+                                    <option value="MA">Morocco</option>
+                                    <option value="MZ">Mozambique</option>
+                                    <option value="MM">Myanmar (Burma)</option>
+                                    <option value="NA">Namibia</option>
+                                    <option value="NR">Nauru</option>
+                                    <option value="NP">Nepal</option>
+                                    <option value="NL">Netherlands</option>
+                                    <option value="AN">Netherlands Antilles</option>
+                                    <option value="NC">New Caledonia</option>
+                                    <option value="NZ">New Zealand</option>
+                                    <option value="NI">Nicaragua</option>
+                                    <option value="NE">Niger</option>
+                                    <option value="NG">Nigeria</option>
+                                    <option value="NU">Niue</option>
+                                    <option value="NF">Norfolk Island</option>
+                                    <option value="MP">Northern Mariana Islands</option>
+                                    <option value="NO">Norway</option>
+                                    <option value="OM">Oman</option>
+                                    <option value="PK">Pakistan</option>
+                                    <option value="PW">Palau</option>
+                                    <option value="PS">Palestine</option>
+                                    <option value="PA">Panama</option>
+                                    <option value="PG">Papua New Guinea</option>
+                                    <option value="PY">Paraguay</option>
+                                    <option value="PE">Peru</option>
+                                    <option value="PH">Philippines</option>
+                                    <option value="PN">Pitcairn Islands</option>
+                                    <option value="PL">Poland</option>
+                                    <option value="PT">Portugal</option>
+                                    <option value="PR">Puerto Rico</option>
+                                    <option value="QA">Qatar</option>
+                                    <option value="RE">Reunion</option>
+                                    <option value="RO">Romania</option>
+                                    <option value="RU">Russian Federation</option>
+                                    <option value="RW">Rwanda</option>
+                                    <option value="BL">Saint Barthelemy</option>
+                                    <option value="SH">Saint Helena</option>
+                                    <option value="KN">Saint Kitts and Nevis</option>
+                                    <option value="LC">Saint Lucia</option>
+                                    <option value="MF">Saint Martin</option>
+                                    <option value="PM">Saint Pierre and Miquelon</option>
+                                    <option value="VC">Saint Vincent and the Grenadines</option>
+                                    <option value="WS">Samoa</option>
+                                    <option value="SM">San Marino</option>
+                                    <option value="ST">Sao Tome and Principe</option>
+                                    <option value="SA">Saudi Arabia</option>
+                                    <option value="SN">Senegal</option>
+                                    <option value="RS">Serbia</option>
+                                    <option value="CS">Serbia and Montenegro</option>
+                                    <option value="SC">Seychelles</option>
+                                    <option value="SL">Sierra Leone</option>
+                                    <option value="SG">Singapore</option>
+                                    <option value="SX">Sint Maarten</option>
+                                    <option value="SK">Slovakia</option>
+                                    <option value="SI">Slovenia</option>
+                                    <option value="SB">Solomon Islands</option>
+                                    <option value="SO">Somalia</option>
+                                    <option value="ZA">South Africa</option>
+                                    <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                    <option value="SS">South Sudan</option>
+                                    <option value="ES">Spain</option>
+                                    <option value="LK">Sri Lanka</option>
+                                    <option value="SD">Sudan</option>
+                                    <option value="SR">Suriname</option>
+                                    <option value="SJ">Svalbard and Jan Mayen</option>
+                                    <option value="SE">Sweden</option>
+                                    <option value="CH">Switzerland</option>
+                                    <option value="SY">Syria</option>
+                                    <option value="TW">Taiwan</option>
+                                    <option value="TJ">Tajikistan</option>
+                                    <option value="TZ">Tanzania</option>
+                                    <option value="TH">Thailand</option>
+                                    <option value="TL">Timor-Leste</option>
+                                    <option value="TG">Togo</option>
+                                    <option value="TK">Tokelau</option>
+                                    <option value="TO">Tonga</option>
+                                    <option value="TT">Trinidad and Tobago</option>
+                                    <option value="TN">Tunisia</option>
+                                    <option value="TR">Turkey (Türkiye)</option>
+                                    <option value="TM">Turkmenistan</option>
+                                    <option value="TC">Turks and Caicos Islands</option>
+                                    <option value="TV">Tuvalu</option>
+                                    <option value="UM">U.S. Outlying Islands</option>
+                                    <option value="UG">Uganda</option>
+                                    <option value="UA">Ukraine</option>
+                                    <option value="AE">United Arab Emirates</option>
+                                    <option value="GB">United Kingdom</option>
+                                    <option value="US">United States</option>
+                                    <option value="UY">Uruguay</option>
+                                    <option value="UZ">Uzbekistan</option>
+                                    <option value="VU">Vanuatu</option>
+                                    <option value="VA">Vatican City Holy See</option>
+                                    <option value="VE">Venezuela</option>
+                                    <option value="VN">Vietnam</option>
+                                    <option value="VG">Virgin Islands, British</option>
+                                    <option value="VI">Virgin Islands, U.S</option>
+                                    <option value="WF">Wallis and Futuna</option>
+                                    <option value="EH">Western Sahara</option>
+                                    <option value="YE">Yemen</option>
+                                    <option value="ZM">Zambia</option>
+                                    <option value="ZW">Zimbabwe</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col gap-3 w-full">
+                                <label class="font-montserrat font-semibold text-base lg:text-lg" for="address">Address</label>
+                                <input type="text" name="address" id="address" placeholder="Street Address" class="w-full h-15 lg:h-18 p-6 border border-gray-300 rounded-2xl font-dm-sans text-base font-medium placeholder:text-black/70 text-black/70 focus:outline-none focus:border-yellow-main transition-all">
+                            </div>
+                        </div>
+                        <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+                            <div class="flex flex-col gap-3 w-full">
+                                <label class="font-montserrat font-semibold text-base lg:text-lg" for="city">City</label>
+                                <input type="text" name="city" id="city" placeholder="Enter City" class="w-full h-15 lg:h-18 p-6 border border-gray-300 rounded-2xl font-dm-sans text-base font-medium placeholder:text-black/70 text-black/70 focus:outline-none focus:border-yellow-main transition-all">
+                            </div>
+                            <div class="flex flex-col gap-3 w-full">
+                                <label class="font-montserrat font-semibold text-base lg:text-lg" for="zip-code">Zip Code</label>
+                                <input type="text" name="zip-code" id="zip-code" placeholder="Enter a Zip Code" class="w-full h-15 lg:h-18 p-6 border border-gray-300 rounded-2xl font-dm-sans text-base font-medium placeholder:text-black/70 text-black/70 focus:outline-none focus:border-yellow-main transition-all">
+                            </div>
+                        </div>
+                        <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+                            <div class="flex flex-col gap-3 w-full">
+                                <label class="font-montserrat font-semibold text-base lg:text-lg" for="phone-number">Phone Number</label>
+                                <input type="text" name="phone-number" id="phone-number" placeholder="Enter Phone Number" class="w-full h-15 lg:h-18 p-6 border border-gray-300 rounded-2xl font-dm-sans text-base font-medium placeholder:text-black/70 text-black/70 focus:outline-none focus:border-yellow-main transition-all">
+                            </div>
+                            <div class="flex flex-col gap-3 w-full">
+                                <label class="font-montserrat font-semibold text-base lg:text-lg" for="dob">Date of Birth</label>
+                                <input type="text" name="dob" id="dob" placeholder="Enter Date of Birth (dd/mm/yy)" class="w-full h-15 lg:h-18 p-6 border border-gray-300 rounded-2xl font-dm-sans text-base font-medium placeholder:text-black/70 text-black/70 focus:outline-none focus:border-yellow-main transition-all">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3 w-full">
+                            <label class="font-montserrat font-semibold text-base lg:text-lg" for="company-name">Company Name</label>
+                            <input type="text" name="dob" id="company-name" placeholder="Enter Company Name" class="w-full h-15 lg:h-18 p-6 border border-gray-300 rounded-2xl font-dm-sans text-base font-medium placeholder:text-black/70 text-black/70 focus:outline-none focus:border-yellow-main transition-all">
+                            <small class="font-montserrat text-base">If no company name, you can have the team name here.</small>
+                        </div>
+                        <div class="flex flex-col gap-3 w-full">
+                            <label class="font-montserrat font-semibold text-base lg:text-lg" for="team-name">Team Name</label>
+                            <input type="text" name="dob" id="team-name" placeholder="Enter Team Name" class="w-full h-15 lg:h-18 p-6 border border-gray-300 rounded-2xl font-dm-sans text-base font-medium placeholder:text-black/70 text-black/70 focus:outline-none focus:border-yellow-main transition-all">
+                            <small class="font-montserrat text-base">If no company name, you can have the team name here.</small>
+                        </div>
+                        <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+                            <div class="flex flex-col gap-3 w-full">
+                                <label class="font-montserrat font-semibold text-base lg:text-lg" for="company-address">Company Address</label>
+                                <input type="text" name="company-address" id="company-address" placeholder="Enter Full Company Address" class="w-full h-15 lg:h-18 p-6 border border-gray-300 rounded-2xl font-dm-sans text-base font-medium placeholder:text-black/70 text-black/70 focus:outline-none focus:border-yellow-main transition-all">
+                            </div>
+                            <div class="flex flex-col gap-3 w-full">
+                                <label class="font-montserrat font-semibold text-base lg:text-lg" for="cpn">Company Phone Number</label>
+                                <input type="text" name="cpn" id="cpn" placeholder="Enter Company Phone Numbe" class="w-full h-15 lg:h-18 p-6 border border-gray-300 rounded-2xl font-dm-sans text-base font-medium placeholder:text-black/70 text-black/70 focus:outline-none focus:border-yellow-main transition-all">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3 w-full">
+                            <label class="font-montserrat font-semibold text-base lg:text-lg" for="company-size">Company size</label>
+                            <input type="text" name="company-size" id="company-size" placeholder="Enter the Number of Employees" class="w-full h-15 lg:h-18 p-6 border border-gray-300 rounded-2xl font-dm-sans text-base font-medium placeholder:text-black/70 text-black/70 focus:outline-none focus:border-yellow-main transition-all">
+                            <small class="font-montserrat text-base">The number of employees (approximately).</small>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <input type="submit" value="Submit for Approval" class="w-full lg:w-auto py-2 h-12 lg:h-15 px-6 bg-yellow-main font-rubik font-medium text-lg rounded-xl cursor-pointer mt-10">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-span-12 lg:col-span-3 flex flex-col gap-2 px-4 lg:px-0">
+                    <div class="w-full h-50 rounded-xl relative">
+                        <img src="/images/side-post1.png" alt="Post Image" class="h-full w-full object-cover rounded-xl relative">
+                        <div class="absolute bottom-0 flex items-center justify-between py-2 px-5 left-0 right-0  w-full bg-white rounded-bl-xl rounded-br-xl">
+                            <div class="flex gap-4 items-center">
+                                <div class="w-10 h-10 rounded-full relative">
+                                    <img src="/images/side-avatar1.png" alt="Avatar" class="w-full h-full object-cover">
+                                    <span class="w-3 h-3 rounded-full bg-green-400 border border-white absolute right-0 bottom-0"></span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class="font-montserrat text-base font-semibold text-black">Maudie Becker</p>
+                                    <p class="font-dm-sans text-sm text-gray-400">@chyna-schulist</p>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative menu-dropdown-button">
+                                <img src="/images/dots-3.svg" alt="Dots">
+                                <div class="menu-dropdown bg-white rounded-xl border border-gray-200 py-2 min-w-3xs w-full hidden fixed bottom-0 lg:bottom-auto left-0 lg:left-auto lg:absolute lg:right-0 lg:top-full z-20 shadow-md block">
+                                    <ul class="flex flex-col">
+                                        <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">View Profile</a></li>
+                                        <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Copy Profile link</a></li>
+                                        <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 border-b border-gray-300  hover:bg-light-gray hover:text-gray-800">Add to Collection</a></li>
+                                        <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium flex items-center text-red-700 gap-2 hover:bg-light-gray"><img src="/images/report-icon.svg" alt="Report"> Report user</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full h-50 rounded-xl relative">
+                        <img src="/images/side-post2.png" alt="Post Image" class="h-full w-full object-cover rounded-xl relative">
+                        <div class="absolute bottom-0 flex items-center justify-between py-2 px-5 left-0 right-0  w-full bg-white rounded-bl-xl rounded-br-xl">
+                            <div class="flex gap-4 items-center">
+                                <div class="w-10 h-10 rounded-full relative">
+                                    <img src="/images/side-avatar1.png" alt="Avatar" class="w-full h-full object-cover">
+                                    <span class="w-3 h-3 rounded-full bg-green-400 border border-white border-2 absolute right-0 bottom-0"></span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class="font-montserrat text-base font-semibold text-black">Maudie Becker</p>
+                                    <p class="font-dm-sans text-sm text-gray-400">@chyna-schulist</p>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative menu-dropdown-button">
+                                <img src="/images/dots-3.svg" alt="Dots">
+                                <div class="menu-dropdown bg-white rounded-xl border border-gray-200 py-2 min-w-3xs w-full hidden fixed bottom-0 lg:bottom-auto left-0 lg:left-auto lg:absolute lg:right-0 lg:top-full z-20 shadow-md">
+                                    <ul class="flex flex-col">
+                                        <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">View Profile</a></li>
+                                        <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Copy Profile link</a></li>
+                                        <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 border-b border-gray-300  hover:bg-light-gray hover:text-gray-800">Add to Collection</a></li>
+                                        <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium flex items-center text-red-700 gap-2 hover:bg-light-gray"><img src="/images/report-icon.svg" alt="Report"> Report user</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full h-50 rounded-xl relative">
+                        <img src="/images/side-post3.png" alt="Post Image" class="h-full w-full object-cover rounded-xl relative">
+                        <div class="absolute bottom-0 flex items-center justify-between py-2 px-5 left-0 right-0  w-full bg-white rounded-bl-xl rounded-br-xl">
+                            <div class="flex gap-4 items-center">
+                                <div class="w-10 h-10 rounded-full relative">
+                                    <img src="/images/side-avatar1.png" alt="Avatar" class="w-full h-full object-cover">
+                                    <span class="w-3 h-3 rounded-full bg-green-400 border border-white border-2 absolute right-0 bottom-0"></span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class="font-montserrat text-base font-semibold text-black">Maudie Becker</p>
+                                    <p class="font-dm-sans text-sm text-gray-400">@chyna-schulist</p>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative menu-dropdown-button">
+                                <img src="/images/dots-3.svg" alt="Dots">
+                                <div class="menu-dropdown bg-white rounded-xl border border-gray-200 py-2 min-w-3xs w-full hidden fixed bottom-0 lg:bottom-auto left-0 lg:left-auto lg:absolute lg:right-0 lg:top-full z-20 shadow-md">
+                                    <ul class="flex flex-col">
+                                        <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">View Profile</a></li>
+                                        <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Copy Profile link</a></li>
+                                        <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 border-b border-gray-300  hover:bg-light-gray hover:text-gray-800">Add to Collection</a></li>
+                                        <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium flex items-center text-red-700 gap-2 hover:bg-light-gray"><img src="/images/report-icon.svg" alt="Report"> Report user</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script type="module" src="/src/js/slider.js"></script>
+<script type="module" src="/src/js/menu-dropdown.js"></script>
+<script type="module" src="/src/js/my-profile-slider.js"></script>
+</body>
+</html>
