@@ -34,7 +34,6 @@ export default defineConfig({
         'invitation-sent-empty': resolve(__dirname, 'team/invitation-sent-empty.html'),
         'invitation-rejected-empty': resolve(__dirname, 'team/invitation-rejected-empty.html'),
         'my-posts': resolve(__dirname, 'my-posts/my-posts.html'),
-        'my-posts-empty': resolve(__dirname, 'my-posts/my-posts-empty.html'),
         'my-earnings-tips': resolve(__dirname, 'my-earnings/my-earnings-tips.html'),
         'my-earnings-tips-empty': resolve(__dirname, 'my-earnings/my-earnings-tips-empty.html'),
         'my-earnings-paid-posts': resolve(__dirname, 'my-earnings/my-earnings-paid-posts.html'),

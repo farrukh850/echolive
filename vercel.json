@@ -26,7 +26,6 @@
     { "source": "/team/invitation-sent", "destination": "/team/invitation-sent.html" },
     { "source": "/team/invitation-sent-empty", "destination": "/team/invitation-sent-empty.html" },
     { "source": "/my-posts/my-posts", "destination": "/my-posts/my-posts.html" },
-    { "source": "/my-posts/my-posts-empty", "destination": "/my-posts/my-posts-empty.html" },
     { "source": "/my-earnings/my-earnings-tips", "destination": "/my-earnings/my-earnings-tips.html" },
     { "source": "/my-earnings/my-earnings-tips-empty", "destination": "/my-earnings/my-earnings-tips-empty.html" },
     { "source": "/my-earnings/my-earnings-paid-posts", "destination": "/my-earnings/my-earnings-paid-posts.html" },
