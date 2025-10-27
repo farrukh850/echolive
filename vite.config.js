@@ -37,7 +37,7 @@ export default defineConfig({
         'my-earnings-paid-posts': resolve(__dirname, 'my-earnings/my-earnings-paid-posts.html'),
         'my-earnings-paid-posts-empty': resolve(__dirname, 'my-earnings/my-earnings-paid-posts-empty.html'),
         'my-earnings-subscriptions': resolve(__dirname, 'my-earnings/my-earnings-subscriptions.html'),
-        'my-earnings-subscriptions-empty': resolve(__dirname, 'my-posts/my-earnings-subscriptions-empty.html'),
+        'my-earnings-subscriptions-empty': resolve(__dirname, 'my-earnings/my-earnings-subscriptions-empty.html'),
         'multi-user-account': resolve(__dirname, 'multi-user-account/multi-user-account.html'),
         'search': resolve(__dirname, 'search/search.html'),
         'partners': resolve(__dirname, 'partners/partners.html'),
