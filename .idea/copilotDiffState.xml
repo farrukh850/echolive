@@ -11,6 +11,14 @@
             </PendingDiffInfo>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/js/checkbox.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/js/checkbox.js" />
+              <option name="updatedContent" value="// Custom checkbox functionality&#10;document.addEventListener('DOMContentLoaded', function() {&#10;    // Find all custom checkboxes&#10;    const checkboxes = document.querySelectorAll('input[type=&quot;checkbox&quot;].sr-only');&#10;    &#10;    checkboxes.forEach(checkbox =&gt; {&#10;        const label = document.querySelector(`label[for=&quot;${checkbox.id}&quot;]`);&#10;        const toggleSpan = label?.querySelector('span');&#10;        const backgroundDiv = checkbox.parentElement.querySelector('div:last-child');&#10;        &#10;        if (label &amp;&amp; toggleSpan &amp;&amp; backgroundDiv) {&#10;            // Set initial state&#10;            updateCheckboxAppearance(checkbox, toggleSpan, backgroundDiv);&#10;            &#10;            // Add click event to label&#10;            label.addEventListener('click', function(e) {&#10;                e.preventDefault();&#10;                checkbox.checked = !checkbox.checked;&#10;                updateCheckboxAppearance(checkbox, toggleSpan, backgroundDiv);&#10;                &#10;                // Trigger change event for form handling&#10;                checkbox.dispatchEvent(new Event('change'));&#10;            });&#10;            &#10;            // Also handle direct checkbox change events&#10;            checkbox.addEventListener('change', function() {&#10;                updateCheckboxAppearance(checkbox, toggleSpan, backgroundDiv);&#10;            });&#10;        }&#10;    });&#10;    &#10;    function updateCheckboxAppearance(checkbox, toggleSpan, backgroundDiv) {&#10;        if (checkbox.checked) {&#10;            // Checked state&#10;            toggleSpan.style.transform = 'translateX(28px)'; // 7 * 4px (translate-x-7)&#10;            backgroundDiv.style.backgroundColor = '#F4D03F'; // yellow-main color&#10;        } else {&#10;            // Unchecked state&#10;            toggleSpan.style.transform = 'translateX(0)';&#10;            backgroundDiv.style.backgroundColor = '#D1D5DB'; // gray-300 color&#10;        }&#10;    }&#10;});" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
