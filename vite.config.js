@@ -24,6 +24,7 @@ export default defineConfig({
         'my-subscriptions-empty': resolve(__dirname, 'settings/my-subscriptions-empty.html'),
         'my-interests': resolve(__dirname, 'settings/my-interests.html'),
         'payment-details': resolve(__dirname, 'settings/payment-details.html'),
+        'payment-details-empty': resolve(__dirname, 'settings/payment-details-empty.html'),
         'my-profile': resolve(__dirname, 'profiles/my-profile.html'),
         'other-user-profile': resolve(__dirname, 'profiles/other-user-profile.html'),
         'team-members': resolve(__dirname, 'teams/team-members.html'),
