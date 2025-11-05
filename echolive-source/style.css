@@ -17,6 +17,7 @@
     --color-green-dark: #08A700;
     --color-light-blue: #95A5A6;
     --color-red-main: #FF0000;
+    --color-golden: #B2802C;
 
   /* Custom Width */
   --max-width-login: 449px;
@@ -48,6 +49,9 @@ main{
   .container{
       padding: 0 !important;
   }
+main{
+    margin-top: 80px;
+}
 }
 .font-montserrat {
   font-family: "Montserrat", ui-sans-serif, system-ui, sans-serif;
@@ -123,3 +127,6 @@ header .menu-dropdown {
 .notification-paragraph.expanded {
   height: auto;
 }
+
+
+

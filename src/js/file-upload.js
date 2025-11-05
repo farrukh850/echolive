@@ -20,15 +20,22 @@ document.addEventListener('DOMContentLoaded', function() {
             uploadArea.appendChild(fileInput);
         }
 
+        // Create container div for image preview
+        const imageContainer = document.createElement('div');
+        imageContainer.className = 'hidden w-full h-72 rounded-3xl overflow-hidden';
+        uploadArea.style.position = 'relative';
+
         // Create image preview element
         const previewImage = document.createElement('img');
-        previewImage.className = 'hidden w-full h-full object-cover rounded-3xl absolute top-0 left-0';
-        uploadArea.style.position = 'relative';
-        uploadArea.appendChild(previewImage);
+        previewImage.className = 'w-full h-full object-cover';
+
+        // Add image to container and container to upload area
+        imageContainer.appendChild(previewImage);
+        uploadArea.appendChild(imageContainer);
 
         // Click event to trigger file input
         uploadArea.addEventListener('click', function(e) {
-            if (e.target === uploadArea || e.target === uploadIcon || e.target === uploadText || e.target === previewImage) {
+            if (e.target === uploadArea || e.target === uploadIcon || e.target === uploadText || e.target === previewImage || e.target === imageContainer) {
                 e.preventDefault();
                 e.stopPropagation();
                 fileInput.click();
@@ -45,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const reader = new FileReader();
                     reader.onload = function(e) {
                         previewImage.src = e.target.result;
-                        previewImage.classList.remove('hidden');
+                        imageContainer.classList.remove('hidden');
                         uploadIcon.classList.add('hidden');
                         uploadText.classList.add('hidden');
 
@@ -57,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     // For non-image files (like PDF)
                     uploadText.textContent = `Selected: ${file.name}`;
                     uploadText.classList.remove('hidden');
-                    previewImage.classList.add('hidden');
+                    imageContainer.classList.add('hidden');
                     uploadIcon.classList.remove('hidden');
                     uploadArea.classList.add('bg-gray-200');
                     uploadArea.classList.remove('bg-light-gray');
@@ -73,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
             uploadText.textContent = 'Drop or click to upload files';
             uploadText.classList.remove('hidden');
             uploadIcon.classList.remove('hidden');
-            previewImage.classList.add('hidden');
+            imageContainer.classList.add('hidden');
             previewImage.src = '';
             uploadArea.classList.remove('bg-gray-200', 'bg-gray-300');
             uploadArea.classList.add('bg-light-gray');

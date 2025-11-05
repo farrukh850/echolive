@@ -37,6 +37,7 @@
     { "source": "/partners/partners", "destination": "/partners/partners.html" },
     { "source": "/partners/partners-empty", "destination": "/partners/partners-empty.html" },
     { "source": "/fans/fans", "destination": "/fans/fans.html" },
-    { "source": "/become-a-creator/become-a-creator", "destination": "/become-a-creator/become-a-creator.html" }
+    { "source": "/become-a-creator/become-a-creator", "destination": "/become-a-creator/become-a-creator.html" },
+    { "source": "/media-vault/media-vault", "destination": "/media-vault/media-vault.html" }
   ]
 }

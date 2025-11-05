@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Echolive</title>
+</head>
+<body class="bg-body-bg">
+<!-- Navbar -->
+<header class="flex items-center justify-center p-4 lg:py-2 lg:px-8 bg-white z-50 relative">
+    <a href="collection-posts.html" class="flex-auto"><img src="/images/logo.svg" class="w-36" alt="Logo"></a>
+    <nav class="hidden lg:block flex-auto">
+        <ul class="flex gap-6 justify-center">
+            <li><a href="#" class="font-montserrat text-lg font-medium text-navbar-color hover:text-yellow-main transform transition-all">Home</a></li>
+            <li><a href="#" class="font-montserrat text-lg font-medium text-navbar-color hover:text-yellow-main transform transition-all">Notifications</a></li>
+            <li><a href="#" class="font-montserrat text-lg font-medium text-navbar-color hover:text-yellow-main transform transition-all">Messages</a></li>
+            <li><a href="#" class="font-montserrat text-lg font-medium text-navbar-color hover:text-yellow-main transform transition-all">Collections</a></li>
+            <li><a href="#" class="font-montserrat text-lg font-medium text-navbar-color hover:text-yellow-main transform transition-all">Media Vault</a></li>
+        </ul>
+    </nav>
+    <div class="flex gap-2 flex-auto justify-end ">
+        <button class="w-12 lg:w-18 h-12 lg:h-18 flex items-center justify-center border border-black/10 bg-gray-50 rounded-xl cursor-pointer"><img src="/images/search.svg" alt="Search"></button>
+        <button class="hidden lg:flex px-6  py-5 h-18 items-center justify-center border border-black/10 bg-gray-50 text-xl font-montserrat font-medium rounded-xl cursor-pointer">$1400.32<img src="/images/wallet.svg" alt="wallet" class="pl-4.5"></button>
+        <div class="p-2 w-12 lg:w-50 h-12 lg:h-18 flex items-center gap-3 border border-black/10 bg-gray-50 text-xl font-montserrat font-medium rounded-xl cursor-pointer menu-dropdown-button relative"><img src="/images/avatar.svg" alt="Avatar">
+            <div class="flex-col hidden lg:flex">
+                <p class="font-montserrat text-lg font-semibold">JohnDoe</p>
+                <p class="font-montserrat text-sm font-semibold text-black/60">@johndoe12</p>
+            </div>
+            <div class="menu-dropdown hidden bg-white rounded-bl-xl rounded-br-xl lg:rounded-xl border border-gray-200 py-2 min-w-3xs w-full fixed top-20 left-0 lg:absolute right-0 lg:left-auto lg:top-full z-20 shadow-md">
+                <ul class="flex flex-col">
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Create New Post</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Posts</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Profile</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Become a Creator</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Upgrade to Multi-User account</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Media Vault</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Settings</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 border-b border-gray-300 hover:bg-light-gray hover:text-gray-800">Help</a></li>
+                    <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium flex items-center text-gray-500 gap-2 hover:bg-light-gray hover:text-gray-800"><img src="/images/logout.svg" alt="Logout"> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="mt-6">
+    <section class="pb-20">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-5 items-start">
+                <div class="col-span-12 lg:col-span-3 flex flex-col gap-2 px-4 lg:px-0">
+                    <h2 class="font-montserrat font-semibold text-2xl lg:text-3xl mt-8 mb-6">Used in Posts</h2>
+                    <div class="flex flex-col gap-6">
+                        <div class="p-4 bg-white rounded-3xl border border-black/10">
+                            <div class="flex items-center justify-between mb-4 gap-10">
+                                <p class="font-montserrat font-medium text-blue-400 text-base">Used in Posts</p>
+                                <p class="font-montserrat text-sm">July 22, 2025</p>
+                            </div>
+                            <div class="w-full h-40 rounded-xl relative">
+                                <img src="/images/side-post1.png" alt="Post Image" class="h-full w-full object-cover rounded-xl relative">
+                            </div>
+                            <div class="flex items-center justify-between p-2  w-full bg-white rounded-bl-xl rounded-br-xl gap-5">
+                                <p class="font-montserrat text-base font-medium text-black w-2/3">Maudie Becker_content_for_2025.png</p>
+                                <div class="cursor-pointer relative menu-dropdown-button min-w-10">
+                                    <img src="/images/dots-3.svg" alt="Dots">
+                                    <div class="menu-dropdown bg-white rounded-xl border border-gray-200 py-2 min-w-3xs w-full hidden fixed bottom-0 lg:bottom-auto left-0 lg:left-auto lg:absolute lg:right-0 lg:top-full z-20 shadow-md block">
+                                        <ul class="flex flex-col">
+                                            <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">View Profile</a></li>
+                                            <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Copy Profile link</a></li>
+                                            <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 border-b border-gray-300  hover:bg-light-gray hover:text-gray-800">Add to Collection</a></li>
+                                            <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium flex items-center text-red-700 gap-2 hover:bg-light-gray"><img src="/images/report-icon.svg" alt="Report"> Report user</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white rounded-3xl border border-black/10">
+                            <div class="flex items-center justify-between mb-4 gap-10">
+                                <p class="font-montserrat font-medium text-blue-400 text-base">Used in Posts</p>
+                                <p class="font-montserrat text-sm">July 22, 2025</p>
+                            </div>
+                            <div class="w-full h-40 rounded-xl relative">
+                                <img src="/images/side-post3.png" alt="Post Image" class="h-full w-full object-cover rounded-xl relative">
+                            </div>
+                            <div class="flex items-center justify-between p-2  w-full bg-white rounded-bl-xl rounded-br-xl gap-5">
+                                <p class="font-montserrat text-base font-medium text-black w-2/3">Maudie Becker_content_for_2025.png</p>
+                                <div class="cursor-pointer relative menu-dropdown-button min-w-10">
+                                    <img src="/images/dots-3.svg" alt="Dots">
+                                    <div class="menu-dropdown bg-white rounded-xl border border-gray-200 py-2 min-w-3xs w-full hidden fixed bottom-0 lg:bottom-auto left-0 lg:left-auto lg:absolute lg:right-0 lg:top-full z-20 shadow-md block">
+                                        <ul class="flex flex-col">
+                                            <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">View Profile</a></li>
+                                            <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 hover:bg-light-gray hover:text-gray-800">Copy Profile link</a></li>
+                                            <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium text-gray-500 border-b border-gray-300  hover:bg-light-gray hover:text-gray-800">Add to Collection</a></li>
+                                            <li><a href="#" class="block py-2 px-4 font-dm-sans text-base font-medium flex items-center text-red-700 gap-2 hover:bg-light-gray"><img src="/images/report-icon.svg" alt="Report"> Report user</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-9 px-4 lg:px-6 py-6 rounded-0 lg:rounded-3xl bg-white h-full">
+                    <div class="flex items-center justify-between">
+                        <h2 class="font-montserrat font-semibold text-2xl lg:text-3xl">Media Archive</h2>
+                        <button class="edit-popup-button px-4 py-5 h-12 flex items-center justify-center bg-yellow-main border border-yellow-main font-rubik font-medium text-base lg:text-lg rounded-xl cursor-pointer">Upload Content</button>
+                    </div>
+                    <div class="grid grid-cols-12 items-center gap-5 mt-6">
+                        <div class="col-span-12 lg:col-span-4 bg-white">
+                            <div class="w-full h-40 relative rounded-tl-xl rounded-tr-xl overflow-hidden">
+                                <img src="/images/side-post1.png" alt="Post Image" class="h-full w-full object-cover relative">
+                            </div>
+                            <div class="flex items-center justify-between gap-10 py-2 px-5 bg-white rounded-bl-xl rounded-br-xl border border-black/10">
+                                <p class="font-montserrat text-base font-medium text-black w-2/3">Maudie Becker_content_for_2025.png</p>
+                                <div class="cursor-pointer relative menu-dropdown-button min-w-10">
+                                    <img src="/images/dots-3.svg" alt="Dots">
+                                    <div class="menu-dropdown bg-white rounded-xl border border-gray-200 py-2 min-w-3xs w-full hidden fixed bottom-0 lg:bottom-auto left-0 lg:left-auto lg:absolute lg:right-0 lg:top-full z-20 shadow-md">
+                                        <ul class="flex flex-col">
+                                            <li><a href="#" class="unsubscribe-button block py-2 px-4 font-dm-sans text-base font-medium flex items-center gap-2 hover:bg-light-gray"><img src="/images/pencil.svg" alt="Report"> Rename Image</a></li>
+                                            <li><a href="#" class="delete-card-button py-2 px-4 font-dm-sans text-base font-medium flex items-center text-red-500 gap-2 hover:bg-light-gray"><img src="/images/delete.svg" alt="Report"> Delete Image</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 lg:col-span-4 bg-white">
+                            <div class="w-full h-40 relative rounded-tl-xl rounded-tr-xl overflow-hidden">
+                                <img src="/images/side-post2.png" alt="Post Image" class="h-full w-full object-cover relative">
+                            </div>
+                            <div class="flex items-center justify-between gap-10 py-2 px-5 bg-white rounded-bl-xl rounded-br-xl border border-black/10">
+                                <p class="font-montserrat text-base font-medium text-black w-2/3">Maudie Becker_content_for_2025.png</p>
+                                <div class="cursor-pointer relative menu-dropdown-button min-w-10">
+                                    <img src="/images/dots-3.svg" alt="Dots">
+                                    <div class="menu-dropdown bg-white rounded-xl border border-gray-200 py-2 min-w-3xs w-full hidden fixed bottom-0 lg:bottom-auto left-0 lg:left-auto lg:absolute lg:right-0 lg:top-full z-20 shadow-md">
+                                        <ul class="flex flex-col">
+                                            <li><a href="#" class="unsubscribe-button block py-2 px-4 font-dm-sans text-base font-medium flex items-center gap-2 hover:bg-light-gray"><img src="/images/pencil.svg" alt="Report"> Rename Image</a></li>
+                                            <li><a href="#" class="delete-card-button py-2 px-4 font-dm-sans text-base font-medium flex items-center text-red-500 gap-2 hover:bg-light-gray"><img src="/images/delete.svg" alt="Report"> Delete Image</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 lg:col-span-4 bg-white">
+                            <div class="w-full h-40 relative rounded-tl-xl rounded-tr-xl overflow-hidden">
+                                <img src="/images/side-post3.png" alt="Post Image" class="h-full w-full object-cover relative">
+                            </div>
+                            <div class="flex items-center justify-between gap-10 py-2 px-5 bg-white rounded-bl-xl rounded-br-xl border border-black/10">
+                                <p class="font-montserrat text-base font-medium text-black w-2/3">Maudie Becker_content_for_2025.png</p>
+                                <div class="cursor-pointer relative menu-dropdown-button min-w-10">
+                                    <img src="/images/dots-3.svg" alt="Dots">
+                                    <div class="menu-dropdown bg-white rounded-xl border border-gray-200 py-2 min-w-3xs w-full hidden fixed bottom-0 lg:bottom-auto left-0 lg:left-auto lg:absolute lg:right-0 lg:top-full z-20 shadow-md">
+                                        <ul class="flex flex-col">
+                                            <li><a href="#" class="unsubscribe-button block py-2 px-4 font-dm-sans text-base font-medium flex items-center gap-2 hover:bg-light-gray"><img src="/images/pencil.svg" alt="Report"> Rename Image</a></li>
+                                            <li><a href="#" class="delete-card-button py-2 px-4 font-dm-sans text-base font-medium flex items-center text-red-500 gap-2 hover:bg-light-gray"><img src="/images/delete.svg" alt="Report"> Delete Image</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Upload Content popup -->
+<div id="edit-package-popup" class="bg-black/50 fixed top-0 left-0 right-0 bottom-0 z-1000">
+    <div class="fixed bottom-0 left-0 right-0 lg:bottom-auto lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 bg-white rounded-3xl w-full max-w-170 p-4 lg:p-8 max-h-3/4 overflow-scroll">
+        <div class="flex items-center justify-between pb-6 border-b border-black/10">
+            <h2 class="font-montserrat font-semibold text-2xl">Upload Content</h2>
+            <div class="close-icon cursor-pointer"><img src="/images/close-icon.svg" alt="Close Icon"></div>
+        </div>
+        <form action="#" class="w-full flex flex-col gap-6 mt-6">
+            <div class="flex-1 flex flex-col justify-center items-center gap-6 w-full min-h-72 bg-light-gray rounded-3xl file-upload-area-popup" style="position: relative;">
+                <img src="/images/png.svg" class="w-18" alt="Photo Icon">
+                <p class="font-montserrat font-medium text-base file-upload-text">Drop or click to upload files</p>
+                <input type="file" id="file-upload-0" name="file-upload-0" accept="image/*,.pdf" class="hidden"><img class="hidden w-full h-full object-cover rounded-3xl absolute top-0 left-0">
+            </div>
+            <div class="uploaded-images">
+
+            </div>
+            <div class="flex items-center gap-5">
+                <button class="flex-1 h-16 flex items-center justify-center py-6 px-5 lg:px-10 rounded-xl text-base lg:text-lg font-medium font-rubik border border-black/10 cursor-pointer">Cancel</button>
+                <button class="flex-1 h-16 flex items-center justify-center py-6 px-5 lg:px-10 rounded-xl text-base lg:text-lg bg-yellow-main font-medium font-rubik border border-light-gray cursor-pointer">Upload</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Rename Image popup -->
+<div id="unsubscribe" class="bg-black/50 fixed top-0 left-0 right-0 bottom-0 z-1000">
+    <div class="fixed bottom-0 left-0 right-0 lg:bottom-auto lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 bg-white rounded-3xl w-full max-w-170 p-4 lg:p-8 max-h-3/4 overflow-scroll">
+        <div class="flex items-center justify-between pb-6 border-b border-black/10">
+            <h2 class="font-montserrat font-semibold text-2xl">Rename Image</h2>
+            <div class="close-icon cursor-pointer"><img src="/images/close-icon.svg" alt="Close Icon"></div>
+        </div>
+        <div class="w-full h-72 rounded-2xl overflow-hidden my-6">
+            <img src="/images/post-img3.png" alt="Post Image" class="h-full w-full object-cover">
+        </div>
+        <div class="rounded-3xl mb-6 relative">
+            <img src="/images/pencil.svg" alt="Pencil Icon" class="absolute top-1/2 left-4 -translate-y-1/2 w-8">
+            <input type="text" value="New_for_October_2025.png" class="focus:outline-none w-full focus:border-yellow-main border border-transparent pl-16 rounded-3xl h-18 bg-light-gray">
+        </div>
+        <div class="flex items-center gap-5">
+            <button class="flex-1 h-16 flex items-center justify-center py-6 px-5 lg:px-10 rounded-xl text-base lg:text-lg font-medium font-rubik border border-black/10 cursor-pointer">Cancel</button>
+            <button class="flex-1 h-16 flex items-center justify-center py-6 px-5 lg:px-10 rounded-xl text-base lg:text-lg bg-yellow-main font-medium font-rubik border border-light-gray cursor-pointer">Save Changes</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Delete Image popup -->
+<div id="delete-card" class="bg-black/50 fixed top-0 left-0 right-0 bottom-0 z-1000">
+    <div class="fixed bottom-0 left-0 right-0 lg:bottom-auto lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 bg-white rounded-3xl w-full max-w-170 p-4 lg:p-8 max-h-3/4 overflow-scroll">
+        <div class="flex items-center justify-between pb-6 border-b border-black/10">
+            <h2 class="font-montserrat font-semibold text-2xl">Delete Image</h2>
+            <div class="close-icon cursor-pointer"><img src="/images/close-icon.svg" alt="Close Icon"></div>
+        </div>
+        <div class="flex flex-col gap-5 items-center justify-center my-8 text-center">
+            <h6 class="text-xl font-montserrat font-semibold">Are you sure you want to delete this image?</h6>
+            <p class="text-base font-montserrat">This action cannot be undone. The image will be  removed from your Media Vault.</p>
+        </div>
+        <div class="flex items-center gap-5">
+            <button class="flex-1 h-16 flex items-center justify-center py-6 px-5 lg:px-10 rounded-xl text-base lg:text-lg font-medium font-rubik border border-black/10 cursor-pointer">Cancel</button>
+            <button class="flex-1 h-16 flex items-center justify-center py-6 px-5 lg:px-10 rounded-xl text-base lg:text-lg bg-red-main text-white font-medium font-rubik border border-light-gray cursor-pointer">Delete Image</button>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="/src/js/slider.js"></script>
+<script type="module" src="/src/js/menu-dropdown.js"></script>
+<script type="module" src="/src/js/popup.js"></script>
+<script type="module" src="/src/js/checkbox.js"></script>
+<script type="module" src="/src/js/file-upload-popup.js"></script>
+</body>
+</html>
