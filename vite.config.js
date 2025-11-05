@@ -45,7 +45,8 @@ export default defineConfig({
         'partners': resolve(__dirname, 'partners/partners.html'),
         'partners-empty': resolve(__dirname, 'partners/partners-empty.html'),
         'fans': resolve(__dirname, 'fans/fans.html'),
-        'become-a-creator': resolve(__dirname, 'become-a-creator/become-a-creator.html')
+        'become-a-creator': resolve(__dirname, 'become-a-creator/become-a-creator.html'),
+        'media-vault': resolve(__dirname, 'media-vault/media-vault.html')
       }
     }
   }
